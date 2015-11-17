@@ -16,6 +16,8 @@
 		AF05310C1BF8143700735162 /* MomentalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF05310B1BF8143700735162 /* MomentalUITests.swift */; };
 		AF05311A1BF977FC00735162 /* MatchPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0531191BF977FC00735162 /* MatchPageContentViewController.swift */; };
 		AF05311C1BF9821E00735162 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF05311B1BF9821E00735162 /* ImageViewController.swift */; };
+		AFF528211BFBC31E007CE1A0 /* ConfirmationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF528201BFBC31E007CE1A0 /* ConfirmationPageViewController.swift */; };
+		AFF528231BFBC6CC007CE1A0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF528221BFBC6CC007CE1A0 /* ProfileViewController.swift */; };
 		AFFD83281BF984A100F7476E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD83271BF984A100F7476E /* Colors.swift */; };
 		AFFD832A1BF9885B00F7476E /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD83291BF9885B00F7476E /* MatchViewController.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,8 @@
 		AF05310D1BF8143700735162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF0531191BF977FC00735162 /* MatchPageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchPageContentViewController.swift; sourceTree = "<group>"; };
 		AF05311B1BF9821E00735162 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		AFF528201BFBC31E007CE1A0 /* ConfirmationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationPageViewController.swift; sourceTree = "<group>"; };
+		AFF528221BFBC6CC007CE1A0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AFFD83271BF984A100F7476E /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		AFFD83291BF9885B00F7476E /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +112,8 @@
 				AF0530EB1BF8143700735162 /* AppDelegate.swift */,
 				AF0530ED1BF8143700735162 /* LoginViewController.swift */,
 				AF0530EF1BF8143700735162 /* Main.storyboard */,
+				AFF528221BFBC6CC007CE1A0 /* ProfileViewController.swift */,
+				AFF528201BFBC31E007CE1A0 /* ConfirmationPageViewController.swift */,
 				AFFD83291BF9885B00F7476E /* MatchViewController.swift */,
 				AF05311B1BF9821E00735162 /* ImageViewController.swift */,
 				AFFD83271BF984A100F7476E /* Colors.swift */,
@@ -275,6 +281,8 @@
 				AF05311C1BF9821E00735162 /* ImageViewController.swift in Sources */,
 				AF05311A1BF977FC00735162 /* MatchPageContentViewController.swift in Sources */,
 				AF0530EC1BF8143700735162 /* AppDelegate.swift in Sources */,
+				AFF528231BFBC6CC007CE1A0 /* ProfileViewController.swift in Sources */,
+				AFF528211BFBC31E007CE1A0 /* ConfirmationPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

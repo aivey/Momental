@@ -10,6 +10,8 @@ import UIKit
 
 class MatchViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
+    //TODO: once fake data is set up, change this to be an array of the fake data objects and
+    // change the corresponding objects in the MatchPageContentViewController.swift files
     let pageMatches: [String] = ["Sam R.", "Sarah J.", "Pizza Pie"]
     
     var pageViewController: UIPageViewController!
