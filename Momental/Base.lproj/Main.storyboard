@@ -308,10 +308,10 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="9Cz-Rs-F3T"/>
-                                        <exclude reference="nqi-2E-l5Q"/>
-                                        <exclude reference="Dlh-fM-nXB"/>
                                         <exclude reference="45S-aT-tcf"/>
+                                        <exclude reference="9Cz-Rs-F3T"/>
+                                        <exclude reference="Dlh-fM-nXB"/>
+                                        <exclude reference="nqi-2E-l5Q"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -371,10 +371,10 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="vRS-Qf-grc"/>
                                         <exclude reference="D3A-L6-n2H"/>
                                         <exclude reference="Up8-ub-5T7"/>
                                         <exclude reference="qkt-UU-8KV"/>
+                                        <exclude reference="vRS-Qf-grc"/>
                                     </mask>
                                 </variation>
                             </imageView>

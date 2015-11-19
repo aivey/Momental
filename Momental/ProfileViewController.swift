@@ -9,6 +9,8 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    
+    var profile: Profile!
 
     override func viewDidLoad() {
         super.viewDidLoad()

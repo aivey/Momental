@@ -10,7 +10,7 @@ import UIKit
 
 class MatchPageContentViewController: UIViewController, UIAlertViewDelegate {
 
-    var matchProfile: String! = "Sam P."
+    var matchProfile: Profile!
     var pageIndex: Int?
     
     @IBOutlet weak var matchImageView: ImageViewController!
@@ -23,7 +23,7 @@ class MatchPageContentViewController: UIViewController, UIAlertViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         matchImageView.configure()
-        matchNameLabel.text = matchProfile
+        matchNameLabel.text = "\(matchProfile.firstName) \(matchProfile.lastName)"
         
         // Do any additional setup after loading the view.
     }
@@ -39,7 +39,7 @@ class MatchPageContentViewController: UIViewController, UIAlertViewDelegate {
     }
     
     @IBAction func book(sender: AnyObject) {
-        let alert = UIAlertView(title: "Confirm", message: "You are about to schedule a meeting with \(matchProfile). Continue?", delegate: self, cancelButtonTitle: "Cancel", otherButtonTitles: "Book")
+        let alert = UIAlertView(title: "Confirm", message: "You are about to schedule a meeting with \(matchProfile.firstName). Continue?", delegate: self, cancelButtonTitle: "Cancel", otherButtonTitles: "Book")
         alert.show()
     }
     

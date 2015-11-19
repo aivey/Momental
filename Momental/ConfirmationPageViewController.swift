@@ -10,7 +10,7 @@ import UIKit
 
 class ConfirmationPageViewController: UIViewController {
 
-    var matchProfile: String?
+    var matchProfile: Profile!
     
     override func viewDidLoad() {
         super.viewDidLoad()
