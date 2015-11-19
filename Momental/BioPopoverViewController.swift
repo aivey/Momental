@@ -1,26 +1,21 @@
 //
-//  ProfileViewController.swift
+//  BioPopoverViewController.swift
 //  Momental
 //
-//  Created by Adrienne Ivey on 11/17/15.
+//  Created by Adrienne Ivey on 11/19/15.
 //  Copyright © 2015 CS147 Mometal Team. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
-    
-    @IBOutlet weak var profileImageView: ImageViewController!
-    @IBOutlet weak var bioLabel: UILabel!
-    @IBOutlet weak var nameLabel: UILabel!
-    
-    var profile: Profile!
+class BioPopoverViewController: UIViewController {
 
+    var bio: String!
+    @IBOutlet weak var bioLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = "\(profile.firstName) \(profile.lastName)"
-        bioLabel.text = profile.bio
-        
+        bioLabel.text = bio
         // Do any additional setup after loading the view.
     }
 

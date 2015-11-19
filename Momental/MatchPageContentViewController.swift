@@ -24,6 +24,7 @@ class MatchPageContentViewController: UIViewController, UIAlertViewDelegate {
         super.viewDidLoad()
         matchImageView.configure()
         matchNameLabel.text = "\(matchProfile.firstName) \(matchProfile.lastName)"
+        matchMessageLabel.text = "is available in \(matchProfile.dorm) \(matchProfile.roomNumber)"
         
         // Do any additional setup after loading the view.
     }
@@ -33,10 +34,11 @@ class MatchPageContentViewController: UIViewController, UIAlertViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+
     @IBAction func viewBio(sender: AnyObject) {
-        //CODE TO DISPLAY BIO
         
     }
+    
     
     @IBAction func book(sender: AnyObject) {
         let alert = UIAlertView(title: "Confirm", message: "You are about to schedule a meeting with \(matchProfile.firstName). Continue?", delegate: self, cancelButtonTitle: "Cancel", otherButtonTitles: "Book")
@@ -61,6 +63,11 @@ class MatchPageContentViewController: UIViewController, UIAlertViewDelegate {
         {
             if let confirmationPage = segue.destinationViewController as? ConfirmationPageViewController {
                 confirmationPage.matchProfile = matchProfile
+            }
+        } else if (segue.identifier == "PresentBio")
+        {
+            if let bioPopover = segue.destinationViewController as? BioPopoverViewController {
+                bioPopover.bio = matchProfile.bio
             }
         }
     }

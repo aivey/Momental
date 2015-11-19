@@ -17,8 +17,9 @@ class Profile {
     var staffPosition: FakeData.StaffPosition!
     var gender: FakeData.Gender!
     var image: String!
+    var bio: String!
     
-    init(firstName: String, lastName: String, dormName: FakeData.Dorms, roomNumber: Int, staffPosition: FakeData.StaffPosition, gender: FakeData.Gender, image: String) {
+    init(firstName: String, lastName: String, dormName: FakeData.Dorms, roomNumber: Int, staffPosition: FakeData.StaffPosition, gender: FakeData.Gender, image: String, bio: String) {
         self.firstName = firstName
         self.lastName = lastName
         self.dorm = dormName
@@ -26,6 +27,7 @@ class Profile {
         self.staffPosition = staffPosition
         self.gender = gender
         self.image = image
+        self.bio = bio
     }
 }
 
