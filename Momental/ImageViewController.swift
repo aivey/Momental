@@ -19,13 +19,14 @@ class ImageViewController: UIImageView {
     */
     private var borderWidth: CGFloat = 2.0
     
-    func configure(){
-        self.image = UIImage(named:"meredith")
+    func configure(image: String) {
+        self.image = UIImage(named: image)
         let savedCenter = self.center
         self.layer.cornerRadius = self.frame.width / 2.0
+        self.clipsToBounds = true;
         self.center = savedCenter
-        self.layer.borderColor = Color.personImageBorderColor().CGColor;
-        self.layer.borderWidth = borderWidth;
+        self.layer.borderColor = Color.personImageBorderColor().CGColor
+        self.layer.borderWidth = borderWidth
     }
 
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16A07ACC1BFECA0D00143BB2 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A07ACB1BFECA0D00143BB2 /* Resources.swift */; };
+		16A07AD01BFECFD100143BB2 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A07ACF1BFECFD100143BB2 /* TalkViewController.swift */; };
 		AF0530EC1BF8143700735162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0530EB1BF8143700735162 /* AppDelegate.swift */; };
 		AF0530EE1BF8143700735162 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0530ED1BF8143700735162 /* LoginViewController.swift */; };
 		AF0530F11BF8143700735162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0530EF1BF8143700735162 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16A07ACB1BFECA0D00143BB2 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		16A07ACF1BFECFD100143BB2 /* TalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TalkViewController.swift; path = ../TalkViewController.swift; sourceTree = "<group>"; };
 		AF0530E81BF8143700735162 /* Momental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momental.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0530EB1BF8143700735162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF0530ED1BF8143700735162 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +119,9 @@
 		AF0530EA1BF8143700735162 /* Momental */ = {
 			isa = PBXGroup;
 			children = (
+				16A07ACF1BFECFD100143BB2 /* TalkViewController.swift */,
 				AF0530EB1BF8143700735162 /* AppDelegate.swift */,
+				16A07ACB1BFECA0D00143BB2 /* Resources.swift */,
 				AF0530ED1BF8143700735162 /* LoginViewController.swift */,
 				AF0530EF1BF8143700735162 /* Main.storyboard */,
 				AF2D922D1BFE8DDC00ED84F4 /* BioPopoverViewController.swift */,
@@ -220,7 +226,7 @@
 				TargetAttributes = {
 					AF0530E71BF8143700735162 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = R72A52J2K5;
+						DevelopmentTeam = 3XAET6U86W;
 					};
 					AF0530FB1BF8143700735162 = {
 						CreatedOnToolsVersion = 7.1;
@@ -293,8 +299,10 @@
 				AF2D922E1BFE8DDC00ED84F4 /* BioPopoverViewController.swift in Sources */,
 				AF0530EC1BF8143700735162 /* AppDelegate.swift in Sources */,
 				AFF528231BFBC6CC007CE1A0 /* ProfileViewController.swift in Sources */,
+				16A07ACC1BFECA0D00143BB2 /* Resources.swift in Sources */,
 				AF2D922A1BFE5E5C00ED84F4 /* Profile.swift in Sources */,
 				AFF528211BFBC31E007CE1A0 /* ConfirmationPageViewController.swift in Sources */,
+				16A07AD01BFECFD100143BB2 /* TalkViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,10 +445,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Momental/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs147.Momental;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs147.mental-health";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -449,10 +459,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Momental/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs147.Momental;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs147.mental-health";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
