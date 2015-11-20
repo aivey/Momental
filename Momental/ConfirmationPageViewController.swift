@@ -13,8 +13,8 @@ class ConfirmationPageViewController: UIViewController, MFMessageComposeViewCont
 
     @IBOutlet weak var matchImageView: ImageViewController!
     @IBOutlet weak var confirmationMessage: UILabel!
-    @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var starButton: UIButton!
+    @IBOutlet weak var viewProfileButton: UIButton!
     
     
     var matchProfile: Profile!
@@ -23,7 +23,7 @@ class ConfirmationPageViewController: UIViewController, MFMessageComposeViewCont
         super.viewDidLoad()
         confirmationMessage.text = "You're seeing \(matchProfile.firstName) in \(matchProfile.dorm) \(matchProfile.roomNumber)."
         matchImageView.configure(matchProfile.image)
-        cancelButton.layer.borderColor = Color.mainColor().CGColor
+        viewProfileButton.layer.borderColor = Color.mainColor().CGColor
         // Do any additional setup after loading the view.
     }
 
