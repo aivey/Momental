@@ -3,9 +3,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Momental" customModuleProvider="target" sceneMemberID="viewController">
@@ -321,9 +323,7 @@
                                 <state key="normal" title="View Bio"/>
                                 <connections>
                                     <action selector="viewBio:" destination="qf6-fm-RrT" eventType="touchUpInside" id="1Qr-az-sMZ"/>
-                                    <segue destination="lKW-ed-dMh" kind="popover" identifier="PresentBio" popoverAnchorView="35S-o5-mei" id="Cf2-ek-LM3">
-                                        <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
-                                    </segue>
+                                    <segue destination="lKW-ed-dMh" kind="push" identifier="PresentBio" id="Cf2-ek-LM3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUM-ho-yku">
