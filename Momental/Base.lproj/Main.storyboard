@@ -348,45 +348,6 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1O-b6-UnV">
-                                <rect key="frame" x="81" y="219" width="211" height="295"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTi-Se-an4">
-                                        <rect key="frame" x="8" y="8" width="195" height="20.5"/>
-                                        <animations/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="301" id="EDj-D1-kfR"/>
-                                            <constraint firstAttribute="height" constant="279" id="JFF-70-ced"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="EDj-D1-kfR"/>
-                                                <exclude reference="JFF-70-ced"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
-                                </subviews>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="iTi-Se-an4" firstAttribute="leading" secondItem="z1O-b6-UnV" secondAttribute="leadingMargin" id="3oR-wk-qoZ"/>
-                                    <constraint firstItem="iTi-Se-an4" firstAttribute="centerX" secondItem="z1O-b6-UnV" secondAttribute="centerX" id="47P-uk-1UH"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iTi-Se-an4" secondAttribute="bottom" constant="8" id="Gv4-nA-caz"/>
-                                    <constraint firstItem="iTi-Se-an4" firstAttribute="top" secondItem="z1O-b6-UnV" secondAttribute="topMargin" id="bgW-SO-vqP"/>
-                                    <constraint firstAttribute="bottom" secondItem="iTi-Se-an4" secondAttribute="bottom" constant="8" id="bgm-hE-I4X"/>
-                                    <constraint firstItem="iTi-Se-an4" firstAttribute="trailing" secondItem="z1O-b6-UnV" secondAttribute="trailingMargin" id="eyt-h8-Nkp"/>
-                                    <constraint firstItem="iTi-Se-an4" firstAttribute="top" secondItem="z1O-b6-UnV" secondAttribute="top" constant="8" id="xG5-ft-5fo"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Gv4-nA-caz"/>
-                                    </mask>
-                                </variation>
-                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUM-ho-yku">
                                 <rect key="frame" x="95" y="592" width="185" height="55"/>
                                 <animations/>
@@ -426,6 +387,48 @@
                                     <action selector="viewBio:" destination="qf6-fm-RrT" eventType="touchUpInside" id="1Qr-az-sMZ"/>
                                 </connections>
                             </button>
+                            <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1O-b6-UnV">
+                                <rect key="frame" x="56" y="219" width="261" height="295"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTi-Se-an4">
+                                        <rect key="frame" x="8" y="8" width="245" height="24"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="301" id="EDj-D1-kfR"/>
+                                            <constraint firstAttribute="height" constant="279" id="JFF-70-ced"/>
+                                            <constraint firstAttribute="height" constant="26" id="mb3-gt-x2b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="EDj-D1-kfR"/>
+                                                <exclude reference="JFF-70-ced"/>
+                                                <exclude reference="mb3-gt-x2b"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iTi-Se-an4" secondAttribute="bottom" constant="8" id="Gv4-nA-caz"/>
+                                    <constraint firstAttribute="bottom" secondItem="iTi-Se-an4" secondAttribute="bottom" constant="20" symbolic="YES" id="Hfm-Qj-EVp"/>
+                                    <constraint firstItem="iTi-Se-an4" firstAttribute="centerX" secondItem="z1O-b6-UnV" secondAttribute="centerX" id="U1I-IL-afh"/>
+                                    <constraint firstItem="iTi-Se-an4" firstAttribute="top" secondItem="z1O-b6-UnV" secondAttribute="topMargin" id="Ysw-Gi-cLv"/>
+                                    <constraint firstAttribute="bottom" secondItem="iTi-Se-an4" secondAttribute="bottom" constant="266.5" id="bgm-hE-I4X"/>
+                                    <constraint firstItem="iTi-Se-an4" firstAttribute="trailing" secondItem="z1O-b6-UnV" secondAttribute="trailingMargin" id="dL3-Xt-sGO"/>
+                                    <constraint firstItem="iTi-Se-an4" firstAttribute="leading" secondItem="z1O-b6-UnV" secondAttribute="leadingMargin" id="qhR-Yi-Z6c"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Gv4-nA-caz"/>
+                                        <exclude reference="bgm-hE-I4X"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -436,7 +439,7 @@
                             <constraint firstItem="ml2-68-Es7" firstAttribute="centerX" secondItem="cmx-6z-QzD" secondAttribute="centerX" id="4nO-i0-vdj"/>
                             <constraint firstItem="ml2-68-Es7" firstAttribute="leading" secondItem="cmx-6z-QzD" secondAttribute="leadingMargin" constant="222" id="6iz-Sg-iHf"/>
                             <constraint firstItem="j1V-ra-5Ym" firstAttribute="top" secondItem="z1O-b6-UnV" secondAttribute="bottom" constant="8" symbolic="YES" id="CwE-X8-qrL"/>
-                            <constraint firstItem="35S-o5-mei" firstAttribute="trailing" secondItem="z1O-b6-UnV" secondAttribute="trailing" constant="67" id="DoA-FU-0jg"/>
+                            <constraint firstItem="35S-o5-mei" firstAttribute="trailing" secondItem="z1O-b6-UnV" secondAttribute="trailing" constant="42" id="DoA-FU-0jg"/>
                             <constraint firstItem="ml2-68-Es7" firstAttribute="leading" secondItem="cmx-6z-QzD" secondAttribute="leadingMargin" constant="91" id="EcY-iX-yIR"/>
                             <constraint firstItem="64w-5m-U5h" firstAttribute="top" secondItem="35S-o5-mei" secondAttribute="bottom" constant="8" symbolic="YES" id="HHJ-dn-nwI"/>
                             <constraint firstItem="j1V-ra-5Ym" firstAttribute="top" secondItem="64w-5m-U5h" secondAttribute="bottom" constant="8" symbolic="YES" id="HmO-P7-owC"/>
@@ -448,7 +451,7 @@
                             <constraint firstItem="j1V-ra-5Ym" firstAttribute="top" secondItem="64w-5m-U5h" secondAttribute="bottom" constant="8" symbolic="YES" id="Xlf-91-Wsf"/>
                             <constraint firstItem="AUM-ho-yku" firstAttribute="top" secondItem="j1V-ra-5Ym" secondAttribute="bottom" constant="15" id="czg-yn-Jca"/>
                             <constraint firstItem="j1V-ra-5Ym" firstAttribute="leading" secondItem="AUM-ho-yku" secondAttribute="leading" id="eHc-ea-Nt4"/>
-                            <constraint firstItem="z1O-b6-UnV" firstAttribute="leading" secondItem="35S-o5-mei" secondAttribute="leading" constant="65" id="fZT-L4-yMf"/>
+                            <constraint firstItem="z1O-b6-UnV" firstAttribute="leading" secondItem="35S-o5-mei" secondAttribute="leading" constant="40" id="fZT-L4-yMf"/>
                             <constraint firstItem="j1V-ra-5Ym" firstAttribute="leading" secondItem="cmx-6z-QzD" secondAttribute="leadingMargin" constant="79" id="gds-WQ-WGX"/>
                             <constraint firstItem="ml2-68-Es7" firstAttribute="top" secondItem="MWh-3u-c2a" secondAttribute="bottom" constant="28" id="hFC-5F-MfT"/>
                             <constraint firstItem="j1V-ra-5Ym" firstAttribute="trailing" secondItem="AUM-ho-yku" secondAttribute="trailing" id="hbC-fM-ail"/>
