@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		AF0530EC1BF8143700735162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0530EB1BF8143700735162 /* AppDelegate.swift */; };
-		AF0530EE1BF8143700735162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0530ED1BF8143700735162 /* ViewController.swift */; };
+		AF0530EE1BF8143700735162 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0530ED1BF8143700735162 /* LoginViewController.swift */; };
 		AF0530F11BF8143700735162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0530EF1BF8143700735162 /* Main.storyboard */; };
 		AF0530F31BF8143700735162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF0530F21BF8143700735162 /* Assets.xcassets */; };
 		AF0530F61BF8143700735162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0530F41BF8143700735162 /* LaunchScreen.storyboard */; };
 		AF0531011BF8143700735162 /* MomentalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0531001BF8143700735162 /* MomentalTests.swift */; };
 		AF05310C1BF8143700735162 /* MomentalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF05310B1BF8143700735162 /* MomentalUITests.swift */; };
+		AF05311A1BF977FC00735162 /* MatchPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0531191BF977FC00735162 /* MatchPageContentViewController.swift */; };
+		AF05311C1BF9821E00735162 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF05311B1BF9821E00735162 /* ImageViewController.swift */; };
+		AF2D922A1BFE5E5C00ED84F4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D92291BFE5E5C00ED84F4 /* Profile.swift */; };
+		AF2D922C1BFE725E00ED84F4 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D922B1BFE725E00ED84F4 /* FakeData.swift */; };
+		AF2D922E1BFE8DDC00ED84F4 /* BioPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D922D1BFE8DDC00ED84F4 /* BioPopoverViewController.swift */; };
+		AF2D92301BFEBA0600ED84F4 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D922F1BFEBA0600ED84F4 /* TalkViewController.swift */; };
+		AFF528211BFBC31E007CE1A0 /* ConfirmationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF528201BFBC31E007CE1A0 /* ConfirmationPageViewController.swift */; };
+		AFF528231BFBC6CC007CE1A0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF528221BFBC6CC007CE1A0 /* ProfileViewController.swift */; };
+		AFFD83281BF984A100F7476E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD83271BF984A100F7476E /* Colors.swift */; };
+		AFFD832A1BF9885B00F7476E /* MatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD83291BF9885B00F7476E /* MatchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +46,7 @@
 /* Begin PBXFileReference section */
 		AF0530E81BF8143700735162 /* Momental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momental.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0530EB1BF8143700735162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AF0530ED1BF8143700735162 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF0530ED1BF8143700735162 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AF0530F01BF8143700735162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF0530F21BF8143700735162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF0530F51BF8143700735162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +57,16 @@
 		AF0531071BF8143700735162 /* MomentalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF05310B1BF8143700735162 /* MomentalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentalUITests.swift; sourceTree = "<group>"; };
 		AF05310D1BF8143700735162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0531191BF977FC00735162 /* MatchPageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchPageContentViewController.swift; sourceTree = "<group>"; };
+		AF05311B1BF9821E00735162 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		AF2D92291BFE5E5C00ED84F4 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		AF2D922B1BFE725E00ED84F4 /* FakeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
+		AF2D922D1BFE8DDC00ED84F4 /* BioPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioPopoverViewController.swift; sourceTree = "<group>"; };
+		AF2D922F1BFEBA0600ED84F4 /* TalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
+		AFF528201BFBC31E007CE1A0 /* ConfirmationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationPageViewController.swift; sourceTree = "<group>"; };
+		AFF528221BFBC6CC007CE1A0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AFFD83271BF984A100F7476E /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AFFD83291BF9885B00F7476E /* MatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +118,18 @@
 			isa = PBXGroup;
 			children = (
 				AF0530EB1BF8143700735162 /* AppDelegate.swift */,
-				AF0530ED1BF8143700735162 /* ViewController.swift */,
+				AF0530ED1BF8143700735162 /* LoginViewController.swift */,
 				AF0530EF1BF8143700735162 /* Main.storyboard */,
+				AF2D922F1BFEBA0600ED84F4 /* TalkViewController.swift */,
+				AF2D922D1BFE8DDC00ED84F4 /* BioPopoverViewController.swift */,
+				AF2D92291BFE5E5C00ED84F4 /* Profile.swift */,
+				AF2D922B1BFE725E00ED84F4 /* FakeData.swift */,
+				AFF528221BFBC6CC007CE1A0 /* ProfileViewController.swift */,
+				AFF528201BFBC31E007CE1A0 /* ConfirmationPageViewController.swift */,
+				AFFD83291BF9885B00F7476E /* MatchViewController.swift */,
+				AF05311B1BF9821E00735162 /* ImageViewController.swift */,
+				AFFD83271BF984A100F7476E /* Colors.swift */,
+				AF0531191BF977FC00735162 /* MatchPageContentViewController.swift */,
 				AF0530F21BF8143700735162 /* Assets.xcassets */,
 				AF0530F41BF8143700735162 /* LaunchScreen.storyboard */,
 				AF0530F71BF8143700735162 /* Info.plist */,
@@ -257,8 +287,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF0530EE1BF8143700735162 /* ViewController.swift in Sources */,
+				AFFD832A1BF9885B00F7476E /* MatchViewController.swift in Sources */,
+				AF0530EE1BF8143700735162 /* LoginViewController.swift in Sources */,
+				AFFD83281BF984A100F7476E /* Colors.swift in Sources */,
+				AF05311C1BF9821E00735162 /* ImageViewController.swift in Sources */,
+				AF2D922C1BFE725E00ED84F4 /* FakeData.swift in Sources */,
+				AF05311A1BF977FC00735162 /* MatchPageContentViewController.swift in Sources */,
+				AF2D922E1BFE8DDC00ED84F4 /* BioPopoverViewController.swift in Sources */,
 				AF0530EC1BF8143700735162 /* AppDelegate.swift in Sources */,
+				AFF528231BFBC6CC007CE1A0 /* ProfileViewController.swift in Sources */,
+				AF2D922A1BFE5E5C00ED84F4 /* Profile.swift in Sources */,
+				AF2D92301BFEBA0600ED84F4 /* TalkViewController.swift in Sources */,
+				AFF528211BFBC31E007CE1A0 /* ConfirmationPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +527,7 @@
 				AF0531121BF8143700735162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF0531131BF8143700735162 /* Build configuration list for PBXNativeTarget "MomentalTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +536,7 @@
 				AF0531151BF8143700735162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF0531161BF8143700735162 /* Build configuration list for PBXNativeTarget "MomentalUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +545,7 @@
 				AF0531181BF8143700735162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
