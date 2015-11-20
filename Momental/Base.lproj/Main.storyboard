@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -241,56 +241,6 @@
             </objects>
             <point key="canvasLocation" x="2900" y="-617"/>
         </scene>
-        <!--Bio Popover View Controller-->
-        <scene sceneID="nya-0l-5ga">
-            <objects>
-                <viewController storyboardIdentifier="BioPopover" id="lKW-ed-dMh" customClass="BioPopoverViewController" customModule="Momental" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FMu-gC-YCJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="7QR-F4-slJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="fDs-BR-gZo">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pew-Ny-xZp">
-                                <rect key="frame" x="20" y="20" width="560" height="580"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbc-eC-7QM">
-                                        <rect key="frame" x="20" y="20" width="520" height="20.5"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstItem="Hbc-eC-7QM" firstAttribute="centerX" secondItem="pew-Ny-xZp" secondAttribute="centerX" id="5bS-kO-ETV"/>
-                                    <constraint firstAttribute="trailing" secondItem="Hbc-eC-7QM" secondAttribute="trailing" constant="20" symbolic="YES" id="PaM-lg-1Z7"/>
-                                    <constraint firstItem="Hbc-eC-7QM" firstAttribute="leading" secondItem="pew-Ny-xZp" secondAttribute="leading" constant="20" symbolic="YES" id="S2I-nm-oo2"/>
-                                    <constraint firstItem="Hbc-eC-7QM" firstAttribute="top" secondItem="pew-Ny-xZp" secondAttribute="top" constant="20" symbolic="YES" id="vrr-0F-qcf"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="pew-Ny-xZp" secondAttribute="trailing" id="AFU-fy-xwi"/>
-                            <constraint firstItem="pew-Ny-xZp" firstAttribute="top" secondItem="FMu-gC-YCJ" secondAttribute="bottom" id="Fqt-U9-Yqd"/>
-                            <constraint firstItem="7QR-F4-slJ" firstAttribute="top" secondItem="pew-Ny-xZp" secondAttribute="bottom" id="gNA-ob-taV"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="pew-Ny-xZp" secondAttribute="leading" id="tod-R8-17i"/>
-                        </constraints>
-                    </view>
-                    <extendedEdge key="edgesForExtendedLayout"/>
-                    <connections>
-                        <outlet property="bioLabel" destination="Hbc-eC-7QM" id="vIb-Zu-LT6"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tEJ-4i-Cqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3703" y="-1303"/>
-        </scene>
         <!--Match Page Content View Controller-->
         <scene sceneID="gHv-39-qez">
             <objects>
@@ -360,7 +310,7 @@
                                             <constraint firstAttribute="height" constant="279" id="JFF-70-ced"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
                                             <mask key="constraints">

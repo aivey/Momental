@@ -107,15 +107,6 @@ class MatchPageContentViewController: UIViewController, UIAlertViewDelegate, MFM
         controller.dismissViewControllerAnimated(true, completion: nil)
     }
 
-
-    
-//    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
-//        if(buttonIndex != 0) {
-//            //CODE TO ADD APPT TO SAVED APPT
-//            performSegueWithIdentifier("bookAppt", sender: nil)
-//        }
-//    }
-
     
     // MARK: - Navigation
 
@@ -128,11 +119,6 @@ class MatchPageContentViewController: UIViewController, UIAlertViewDelegate, MFM
             if let confirmationPage = segue.destinationViewController as? ConfirmationPageViewController {
                 confirmationPage.matchProfile = matchProfile
             }
-//        } else if (segue.identifier == "PresentBio")
-//        {
-//            if let bioPopover = segue.destinationViewController as? BioPopoverViewController {
-//                bioPopover.bio = matchProfile.bio
-//            }
         }
     }
 
