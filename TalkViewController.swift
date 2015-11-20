@@ -30,9 +30,10 @@ class TalkViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         self.topicPicker.delegate = self
         self.topicPicker.dataSource = self
 
-        locationPickerData = ["anywhere", "on east campus", "on west campus"]
-        genderPickerData = ["any gender", "male", "female", "nonbinary"]
-        topicPickerData = ["anything", "LGBT", "relationships", "academic stress", "homesickness", "first-gen"]
+        
+        locationPickerData = FakeData.dormArray //["anywhere", "on east campus", "on west campus"]
+        genderPickerData = FakeData.genderArray //["any gender", "male", "female", "nonbinary"]
+        topicPickerData = FakeData.topicsArray //["anything", "LGBT", "relationships", "academic stress", "homesickness", "first-gen"]
 
         topicPicker.selectRow(12, inComponent:0, animated:false)
         // Do any additional setup after loading the view.

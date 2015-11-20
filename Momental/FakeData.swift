@@ -19,6 +19,11 @@ class FakeData {
     
     static var favorites = Set<Profile>()
     
+    static let genderArray = ["Any Gender", "Female", "Male", "None"]
+    static let dormArray = ["Anywhere", "Arroyo", "Branner", "East Campus", "Flomo", "FroSoCo", "GovCo", "Lagunita", "Larkin", "Rinconada", "Stern", "West Campus", "Wilbur"]
+    static let positionArray = ["Any Position", "Bridge", "CM", "FLIP", "PHE", "RA", "RCC", "RF", "SHPRC"]
+    static let topicsArray = ["Anything", "Academics", "Conflict", "Depression", "Failure", "First-Gen", "Homesickness", "LGBTQ", "Race/Identity", "Relationships", "Self-Harm", "Sexual Assault", "Sexuality", "Stress"]
+    
     class func talkMatches() -> [Profile] {
        return [samProfile, jamieProfile, scottProfile, susanProfile]
     }
