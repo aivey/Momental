@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Orc-nR-KlL">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -117,7 +117,7 @@
             </objects>
             <point key="canvasLocation" x="-592" y="117"/>
         </scene>
-        <!--momental-->
+        <!--Talk-->
         <scene sceneID="Ld8-Ni-H2g">
             <objects>
                 <viewController id="kvQ-LG-IoR" customClass="TalkViewController" customModule="Momental" customModuleProvider="target" sceneMemberID="viewController">
@@ -222,7 +222,7 @@
                             <constraint firstItem="w1H-vd-qKM" firstAttribute="top" secondItem="hOH-HE-97e" secondAttribute="bottom" constant="1" id="vah-0o-HeK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="momental" id="3Rn-wR-k1w"/>
+                    <navigationItem key="navigationItem" title="Talk" id="3Rn-wR-k1w"/>
                     <connections>
                         <outlet property="genderPicker" destination="U73-na-4r2" id="IvT-iT-fVB"/>
                         <outlet property="locationPicker" destination="w1H-vd-qKM" id="q6N-Zs-AO9"/>
@@ -485,10 +485,10 @@
             </objects>
             <point key="canvasLocation" x="3593.5" y="-567.5"/>
         </scene>
-        <!--Confirmation Page View Controller-->
+        <!--Confirmation-->
         <scene sceneID="SeS-OI-LXd">
             <objects>
-                <viewController id="ZWg-Sv-1x2" customClass="ConfirmationPageViewController" customModule="Momental" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Confirmation" id="ZWg-Sv-1x2" customClass="ConfirmationPageViewController" customModule="Momental" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fnz-ZR-83X"/>
                         <viewControllerLayoutGuide type="bottom" id="gv9-h7-40y"/>
@@ -559,7 +559,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="748" text="Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ek4-TW-XVY">
-                                <rect key="frame" x="67" y="276" width="240" height="160"/>
+                                <rect key="frame" x="51" y="276" width="272" height="160"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -607,7 +607,7 @@
                             <constraint firstItem="fCD-uK-XrM" firstAttribute="trailing" secondItem="qKZ-AL-4MO" secondAttribute="trailing" id="0D5-8d-wmB"/>
                             <constraint firstItem="gv9-h7-40y" firstAttribute="top" secondItem="1kT-qi-7e2" secondAttribute="bottom" constant="50" id="1hi-cM-Ha8"/>
                             <constraint firstItem="Jty-xW-zf3" firstAttribute="height" secondItem="Dmj-YS-IKy" secondAttribute="height" id="2Cf-9R-erP"/>
-                            <constraint firstItem="Ek4-TW-XVY" firstAttribute="leading" secondItem="8D0-Xk-ZWp" secondAttribute="leadingMargin" constant="51" id="3eW-fA-GS5"/>
+                            <constraint firstItem="Ek4-TW-XVY" firstAttribute="leading" secondItem="8D0-Xk-ZWp" secondAttribute="leadingMargin" constant="35" id="3eW-fA-GS5"/>
                             <constraint firstItem="Ek4-TW-XVY" firstAttribute="top" secondItem="Jty-xW-zf3" secondAttribute="bottom" constant="13" id="6g6-AP-7bW"/>
                             <constraint firstItem="Ek4-TW-XVY" firstAttribute="top" secondItem="Dmj-YS-IKy" secondAttribute="bottom" constant="13" id="7Vb-qX-e8U"/>
                             <constraint firstItem="Ek4-TW-XVY" firstAttribute="leading" secondItem="8D0-Xk-ZWp" secondAttribute="leadingMargin" constant="64" id="90t-aH-KD3"/>
@@ -668,10 +668,10 @@
             </objects>
             <point key="canvasLocation" x="4096.5" y="-567.5"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Profile-->
         <scene sceneID="BvR-gX-BMz">
             <objects>
-                <viewController id="5dj-oc-fTe" customClass="ProfileViewController" customModule="Momental" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Profile" id="5dj-oc-fTe" customClass="ProfileViewController" customModule="Momental" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M9i-CO-thK"/>
                         <viewControllerLayoutGuide type="bottom" id="lEs-Ss-AXg"/>
@@ -772,10 +772,10 @@
             </objects>
             <point key="canvasLocation" x="4034.5" y="280.5"/>
         </scene>
-        <!--Match View Controller-->
+        <!--Match-->
         <scene sceneID="D4f-YG-YDv">
             <objects>
-                <viewController storyboardIdentifier="RootPageViewController" id="nFm-jL-prN" customClass="MatchViewController" customModule="Momental" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RootPageViewController" title="Match" id="nFm-jL-prN" customClass="MatchViewController" customModule="Momental" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5bK-7z-0nP"/>
                         <viewControllerLayoutGuide type="bottom" id="Fsw-SI-mVH"/>
@@ -851,10 +851,10 @@
             </objects>
             <point key="canvasLocation" x="1615" y="1329"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="1xN-HG-zil">
             <objects>
-                <tabBarController id="Orc-nR-KlL" sceneMemberID="viewController">
+                <tabBarController id="Orc-nR-KlL" customClass="TabBarViewController" customModule="Momental" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="xTu-9o-wHn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

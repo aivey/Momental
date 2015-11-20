@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBar.appearance().barTintColor = Color.mainColor()
         UITabBar.appearance().tintColor = UIColor.whiteColor()
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.whiteColor()], forState:.Normal)
-        
+
         UINavigationBar.appearance().translucent = false
         UINavigationBar.appearance().barTintColor = Color.mainColor()
         UINavigationBar.appearance().tintColor = UIColor.whiteColor()
