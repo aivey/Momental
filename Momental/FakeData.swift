@@ -24,11 +24,18 @@ class FakeData {
     class func myStaff() -> [Profile] {
         return [samProfile, hannahProfile, skylarProfile]
     }
+    
+    static let genderArray = ["Any Gender", "Female", "Male", "None"]
+    static let dormArray = ["Anywhere", "Arroyo", "Branner", "East Campus", "Flomo", "FroSoCo", "GovCo", "Lagunita", "Larkin", "Rinconada", "Stern", "West Campus", "Wilbur"]
+    static let positionArray = ["Any Position", "Bridge", "CM", "FLIP", "PHE", "RA", "RCC", "RF", "SHPRC"]
+    static let topicsArray = ["Anything", "Academics", "Conflict", "Depression", "Failure", "First-Gen", "Homesickness", "LGBTQ", "Race/Identity", "Relationships", "Self-Harm", "Sexual Assault", "Sexuality", "Stress"]
 
     enum Gender {
         case Female
         case Male
         case None
+        
+        static var count: Int { return Gender.None.hashValue + 1}
     }
 
     enum Dorms {
@@ -44,6 +51,8 @@ class FakeData {
         case FroSoCo
         case GovCo
         case Lagunita
+        
+        static var count: Int { return Dorms.Lagunita.hashValue + 1}
     }
 
     enum StaffPosition {
@@ -55,5 +64,25 @@ class FakeData {
         case RF
         case SHPRC
         case FLIP
+        
+        static var count: Int { return StaffPosition.FLIP.hashValue + 1}
+    }
+    
+    enum Topics {
+        case Academics
+        case Conflict
+        case Depression
+        case Failure
+        case FirstGen
+        case Homesickness
+        case LGBTQ
+        case RaceAndIdentity
+        case Relationships
+        case SelfHarm
+        case SexualAssault
+        case Sexuality
+        case Stress
+        
+        static var count: Int { return Topics.Stress.hashValue + 1}
     }
 }

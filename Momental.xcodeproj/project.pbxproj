@@ -19,6 +19,7 @@
 		AF2D922A1BFE5E5C00ED84F4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D92291BFE5E5C00ED84F4 /* Profile.swift */; };
 		AF2D922C1BFE725E00ED84F4 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D922B1BFE725E00ED84F4 /* FakeData.swift */; };
 		AF2D922E1BFE8DDC00ED84F4 /* BioPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D922D1BFE8DDC00ED84F4 /* BioPopoverViewController.swift */; };
+		AF2D92301BFEBA0600ED84F4 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D922F1BFEBA0600ED84F4 /* TalkViewController.swift */; };
 		AFF528211BFBC31E007CE1A0 /* ConfirmationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF528201BFBC31E007CE1A0 /* ConfirmationPageViewController.swift */; };
 		AFF528231BFBC6CC007CE1A0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF528221BFBC6CC007CE1A0 /* ProfileViewController.swift */; };
 		AFFD83281BF984A100F7476E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD83271BF984A100F7476E /* Colors.swift */; };
@@ -61,6 +62,7 @@
 		AF2D92291BFE5E5C00ED84F4 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		AF2D922B1BFE725E00ED84F4 /* FakeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
 		AF2D922D1BFE8DDC00ED84F4 /* BioPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioPopoverViewController.swift; sourceTree = "<group>"; };
+		AF2D922F1BFEBA0600ED84F4 /* TalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkViewController.swift; sourceTree = "<group>"; };
 		AFF528201BFBC31E007CE1A0 /* ConfirmationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationPageViewController.swift; sourceTree = "<group>"; };
 		AFF528221BFBC6CC007CE1A0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AFFD83271BF984A100F7476E /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				AF0530EB1BF8143700735162 /* AppDelegate.swift */,
 				AF0530ED1BF8143700735162 /* LoginViewController.swift */,
 				AF0530EF1BF8143700735162 /* Main.storyboard */,
+				AF2D922F1BFEBA0600ED84F4 /* TalkViewController.swift */,
 				AF2D922D1BFE8DDC00ED84F4 /* BioPopoverViewController.swift */,
 				AF2D92291BFE5E5C00ED84F4 /* Profile.swift */,
 				AF2D922B1BFE725E00ED84F4 /* FakeData.swift */,
@@ -294,6 +297,7 @@
 				AF0530EC1BF8143700735162 /* AppDelegate.swift in Sources */,
 				AFF528231BFBC6CC007CE1A0 /* ProfileViewController.swift in Sources */,
 				AF2D922A1BFE5E5C00ED84F4 /* Profile.swift in Sources */,
+				AF2D92301BFEBA0600ED84F4 /* TalkViewController.swift in Sources */,
 				AFF528211BFBC31E007CE1A0 /* ConfirmationPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
