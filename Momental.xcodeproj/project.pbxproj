@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1630DEBC1BFF2069002D7D38 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1630DEBB1BFF2069002D7D38 /* TabBarViewController.swift */; };
 		16A07ACC1BFECA0D00143BB2 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A07ACB1BFECA0D00143BB2 /* Resources.swift */; };
 		16A07AD01BFECFD100143BB2 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A07ACF1BFECFD100143BB2 /* TalkViewController.swift */; };
 		AF0530EC1BF8143700735162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0530EB1BF8143700735162 /* AppDelegate.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1630DEBB1BFF2069002D7D38 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		16A07ACB1BFECA0D00143BB2 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		16A07ACF1BFECFD100143BB2 /* TalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TalkViewController.swift; path = ../TalkViewController.swift; sourceTree = "<group>"; };
 		AF0530E81BF8143700735162 /* Momental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momental.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 				16A07ACB1BFECA0D00143BB2 /* Resources.swift */,
 				AF0530ED1BF8143700735162 /* LoginViewController.swift */,
 				AF0530EF1BF8143700735162 /* Main.storyboard */,
+				1630DEBB1BFF2069002D7D38 /* TabBarViewController.swift */,
 				AF2D922D1BFE8DDC00ED84F4 /* BioPopoverViewController.swift */,
 				AF2D92291BFE5E5C00ED84F4 /* Profile.swift */,
 				AF2D922B1BFE725E00ED84F4 /* FakeData.swift */,
@@ -294,6 +297,7 @@
 				AF0530EE1BF8143700735162 /* LoginViewController.swift in Sources */,
 				AFFD83281BF984A100F7476E /* Colors.swift in Sources */,
 				AF05311C1BF9821E00735162 /* ImageViewController.swift in Sources */,
+				1630DEBC1BFF2069002D7D38 /* TabBarViewController.swift in Sources */,
 				AF2D922C1BFE725E00ED84F4 /* FakeData.swift in Sources */,
 				AF05311A1BF977FC00735162 /* MatchPageContentViewController.swift in Sources */,
 				AF2D922E1BFE8DDC00ED84F4 /* BioPopoverViewController.swift in Sources */,

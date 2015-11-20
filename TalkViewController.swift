@@ -31,7 +31,7 @@ class TalkViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         self.topicPicker.dataSource = self
 
         locationPickerData = ["anywhere", "on east campus", "on west campus"]
-        genderPickerData = ["male", "female", "nonbinary"]
+        genderPickerData = ["any gender", "male", "female", "nonbinary"]
         topicPickerData = ["anything", "LGBT", "relationships", "academic stress", "homesickness", "first-gen"]
 
         topicPicker.selectRow(12, inComponent:0, animated:false)
@@ -52,10 +52,10 @@ class TalkViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     // The number of rows of data
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView == locationPicker {
-            return 3
+            return locationPickerData.count
         }
         if pickerView == genderPicker {
-            return 3
+            return genderPickerData.count
         }
         if pickerView == topicPicker {
             return 6000
