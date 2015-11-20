@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>40C2B86F-5B30-43B6-B29F-4E1588604DD3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Momental</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DD94F6EE2B481C52FABCDCE7B29B24C2214B9FB5</key>
+		<string>https://github.com/aivey/Momental.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Momental.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DD94F6EE2B481C52FABCDCE7B29B24C2214B9FB5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/aivey/Momental.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DD94F6EE2B481C52FABCDCE7B29B24C2214B9FB5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DD94F6EE2B481C52FABCDCE7B29B24C2214B9FB5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Momental</string>
+		</dict>
+	</array>
+</dict>
+</plist>
