@@ -33,6 +33,10 @@ class FakeData {
     }
     
     class func myFavorites() -> [Profile] {
+        return [samProfile, scottProfile]
+    }
+    
+    class func recents() -> [Profile] {
         return [samProfile, hannahProfile, skylarProfile, scottProfile]
     }
 

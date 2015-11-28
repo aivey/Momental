@@ -1,24 +1,28 @@
 //
-//  FavoritesViewController.swift
+//  MyStaffViewController.swift
 //  Momental
 //
-//  Created by Adrienne Ivey on 11/27/15.
+//  Created by Adrienne Ivey on 11/28/15.
 //  Copyright © 2015 CS147 Mometal Team. All rights reserved.
 //
 
 import UIKit
 
-class FavoritesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MyStaffViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var favoritesTableView: UITableView!
+    @IBOutlet weak var profileTableView: UITableView!
     
-    var profiles: [Profile] = FakeData.myFavorites()
+    var profiles: [Profile] = FakeData.myStaff() {
+        didSet {
+            profileTableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Favorites"
-        favoritesTableView.delegate = self
-        favoritesTableView.dataSource = self
+        profileTableView.delegate = self
+        profileTableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,7 +47,7 @@ class FavoritesViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("ProfileSegue", sender: tableView.cellForRowAtIndexPath(indexPath))
+        performSegueWithIdentifier("MeProfileSegue", sender: tableView.cellForRowAtIndexPath(indexPath))
     }
     
     // MARK: - Navigation
@@ -54,21 +58,13 @@ class FavoritesViewController: UIViewController, UITableViewDataSource, UITableV
         // Pass the selected object to the new view controller.
         if let identifier = segue.identifier {
             switch identifier {
-            case "ProfileSegue":
+            case "MeProfileSegue":
                 if let dvc = segue.destinationViewController as? ProfileViewController {
                     let cell = sender as? PersonTableViewCell
-                    if let indexPath = favoritesTableView.indexPathForCell(cell!) {
+                    if let indexPath = profileTableView.indexPathForCell(cell!) {
                         dvc.profile = profiles[indexPath.row]
                     }
                 }
-//                if let dvc = segue.destinationViewController as? UINavigationController {
-//                    if let pvc = dvc.visibleViewController as? ProfileViewController {
-//                        let cell = sender as? PersonTableViewCell
-//                        if let indexPath = favoritesTableView.indexPathForCell(cell!) {
-//                            pvc.profile = profiles[indexPath.row]
-//                        }
-//                    }
-//                }
             default:
                 return
             }
