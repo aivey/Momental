@@ -31,6 +31,10 @@ class FakeData {
     class func myStaff() -> [Profile] {
         return [samProfile, hannahProfile, skylarProfile]
     }
+    
+    class func myFavorites() -> [Profile] {
+        return [samProfile, hannahProfile, skylarProfile, scottProfile]
+    }
 
     enum Gender {
         case Female

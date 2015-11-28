@@ -19,6 +19,8 @@
 		AF05310C1BF8143700735162 /* MomentalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF05310B1BF8143700735162 /* MomentalUITests.swift */; };
 		AF05311A1BF977FC00735162 /* MatchPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0531191BF977FC00735162 /* MatchPageContentViewController.swift */; };
 		AF05311C1BF9821E00735162 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF05311B1BF9821E00735162 /* ImageViewController.swift */; };
+		AF11C1441C09631100B0F915 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF11C1431C09631100B0F915 /* PersonTableViewCell.swift */; };
+		AF11C1461C09735800B0F915 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF11C1451C09735800B0F915 /* FavoritesViewController.swift */; };
 		AF2D922A1BFE5E5C00ED84F4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D92291BFE5E5C00ED84F4 /* Profile.swift */; };
 		AF2D922C1BFE725E00ED84F4 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D922B1BFE725E00ED84F4 /* FakeData.swift */; };
 		AF2D922E1BFE8DDC00ED84F4 /* BioPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D922D1BFE8DDC00ED84F4 /* BioPopoverViewController.swift */; };
@@ -64,6 +66,8 @@
 		AF05310D1BF8143700735162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF0531191BF977FC00735162 /* MatchPageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchPageContentViewController.swift; sourceTree = "<group>"; };
 		AF05311B1BF9821E00735162 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		AF11C1431C09631100B0F915 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		AF11C1451C09735800B0F915 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		AF2D92291BFE5E5C00ED84F4 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		AF2D922B1BFE725E00ED84F4 /* FakeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
 		AF2D922D1BFE8DDC00ED84F4 /* BioPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioPopoverViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				AF05311B1BF9821E00735162 /* ImageViewController.swift */,
 				AFFD83271BF984A100F7476E /* Colors.swift */,
 				AF0531191BF977FC00735162 /* MatchPageContentViewController.swift */,
+				AF11C1451C09735800B0F915 /* FavoritesViewController.swift */,
+				AF11C1431C09631100B0F915 /* PersonTableViewCell.swift */,
 				AF0530F21BF8143700735162 /* Assets.xcassets */,
 				AF0530F41BF8143700735162 /* LaunchScreen.storyboard */,
 				AF0530F71BF8143700735162 /* Info.plist */,
@@ -296,12 +302,14 @@
 				AFFD832A1BF9885B00F7476E /* MatchViewController.swift in Sources */,
 				AF0530EE1BF8143700735162 /* LoginViewController.swift in Sources */,
 				AFFD83281BF984A100F7476E /* Colors.swift in Sources */,
+				AF11C1441C09631100B0F915 /* PersonTableViewCell.swift in Sources */,
 				AF05311C1BF9821E00735162 /* ImageViewController.swift in Sources */,
 				1630DEBC1BFF2069002D7D38 /* TabBarViewController.swift in Sources */,
 				AF2D922C1BFE725E00ED84F4 /* FakeData.swift in Sources */,
 				AF05311A1BF977FC00735162 /* MatchPageContentViewController.swift in Sources */,
 				AF2D922E1BFE8DDC00ED84F4 /* BioPopoverViewController.swift in Sources */,
 				AF0530EC1BF8143700735162 /* AppDelegate.swift in Sources */,
+				AF11C1461C09735800B0F915 /* FavoritesViewController.swift in Sources */,
 				AFF528231BFBC6CC007CE1A0 /* ProfileViewController.swift in Sources */,
 				16A07ACC1BFECA0D00143BB2 /* Resources.swift in Sources */,
 				AF2D922A1BFE5E5C00ED84F4 /* Profile.swift in Sources */,
