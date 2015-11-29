@@ -39,6 +39,13 @@ class FakeData {
     class func recents() -> [Profile] {
         return [samProfile, hannahProfile, skylarProfile, scottProfile]
     }
+    
+    enum ProfileListType {
+        case Staff
+        case Recents
+        case Favorites
+        case Appointments
+    }
 
     enum Gender {
         case Female

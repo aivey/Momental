@@ -9,20 +9,19 @@
 import UIKit
 
 class ProfileListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+
     @IBOutlet weak var profileTableView: UITableView!
     
-    var profiles: [Profile]!
+    var profiles: [Profile] = FakeData.myFavorites()
+    var type: FakeData.ProfileListType = FakeData.ProfileListType.Favorites
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Favorites"
         profileTableView.delegate = self
         profileTableView.dataSource = self
-        if (profiles == nil) {
-            profiles = FakeData.myStaff()
+        if (type == .Favorites) {
+            self.title = "Favorites"
         }
-        profileTableView.rowHeight = UITableViewAutomaticDimension
     }
     
     override func didReceiveMemoryWarning() {
@@ -42,12 +41,13 @@ class ProfileListViewController: UIViewController, UITableViewDataSource, UITabl
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("PersonCell", forIndexPath: indexPath) as! PersonTableViewCell
+        cell.type = type
         cell.profile = profiles[indexPath.row]
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("MeProfileSegue", sender: tableView.cellForRowAtIndexPath(indexPath))
+        performSegueWithIdentifier("ProfileSegue", sender: tableView.cellForRowAtIndexPath(indexPath))
     }
 
     
@@ -59,7 +59,7 @@ class ProfileListViewController: UIViewController, UITableViewDataSource, UITabl
         // Pass the selected object to the new view controller.
         if let identifier = segue.identifier {
             switch identifier {
-            case "MeProfileSegue":
+            case "ProfileSegue":
                 if let dvc = segue.destinationViewController as? ProfileViewController {
                     let cell = sender as? PersonTableViewCell
                     if let indexPath = profileTableView.indexPathForCell(cell!) {

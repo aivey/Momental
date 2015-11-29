@@ -33,16 +33,19 @@ class MeViewController: UIViewController {
             case "MyStaffSegue":
                 if let dvc = segue.destinationViewController as? ProfileListViewController {
                     dvc.profiles = FakeData.myStaff()
+                    dvc.type = FakeData.ProfileListType.Staff
                     dvc.title = "My Staff"
                 }
             case "RecentsSegue":
                 if let dvc = segue.destinationViewController as? ProfileListViewController {
                     dvc.profiles = FakeData.recents()
+                    dvc.type = FakeData.ProfileListType.Recents
                     dvc.title = "Recents"
                 }
             case "AppointmentsSegue":
                 if let dvc = segue.destinationViewController as? ProfileListViewController {
                     dvc.profiles = FakeData.recents()
+                    dvc.type = FakeData.ProfileListType.Appointments
                     dvc.title = "Appointments"
                 }
             default:

@@ -298,48 +298,6 @@
                                     </mask>
                                 </variation>
                             </imageView>
-<<<<<<< .merge_file_2XFYGa
-                            <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1O-b6-UnV">
-                                <rect key="frame" x="81" y="219" width="211" height="295"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bio" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTi-Se-an4">
-                                        <rect key="frame" x="8" y="8" width="195" height="20.5"/>
-                                        <animations/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="301" id="EDj-D1-kfR"/>
-                                            <constraint firstAttribute="height" constant="279" id="JFF-70-ced"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="EDj-D1-kfR"/>
-                                                <exclude reference="JFF-70-ced"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
-                                </subviews>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="iTi-Se-an4" firstAttribute="leading" secondItem="z1O-b6-UnV" secondAttribute="leadingMargin" id="3oR-wk-qoZ"/>
-                                    <constraint firstItem="iTi-Se-an4" firstAttribute="centerX" secondItem="z1O-b6-UnV" secondAttribute="centerX" id="47P-uk-1UH"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iTi-Se-an4" secondAttribute="bottom" constant="8" id="Gv4-nA-caz"/>
-                                    <constraint firstItem="iTi-Se-an4" firstAttribute="top" secondItem="z1O-b6-UnV" secondAttribute="topMargin" id="bgW-SO-vqP"/>
-                                    <constraint firstAttribute="bottom" secondItem="iTi-Se-an4" secondAttribute="bottom" constant="8" id="bgm-hE-I4X"/>
-                                    <constraint firstItem="iTi-Se-an4" firstAttribute="trailing" secondItem="z1O-b6-UnV" secondAttribute="trailingMargin" id="eyt-h8-Nkp"/>
-                                    <constraint firstItem="iTi-Se-an4" firstAttribute="top" secondItem="z1O-b6-UnV" secondAttribute="top" constant="8" id="xG5-ft-5fo"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Gv4-nA-caz"/>
-                                    </mask>
-                                </variation>
-                            </scrollView>
-=======
->>>>>>> .merge_file_TVDDr1
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUM-ho-yku">
                                 <rect key="frame" x="95" y="592" width="185" height="55"/>
                                 <animations/>
@@ -810,7 +768,7 @@
         <!--Favorites-->
         <scene sceneID="5jA-FD-OMD">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="v6w-Vd-Yj5" customClass="FavoritesViewController" customModule="Momental" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="v6w-Vd-Yj5" customClass="ProfileListViewController" customModule="Momental" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gLn-0D-XIe"/>
                         <viewControllerLayoutGuide type="bottom" id="heg-8b-XpU"/>
@@ -885,13 +843,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="M69-ba-7Vi"/>
                     <connections>
-                        <outlet property="favoritesTableView" destination="RBY-zt-8N1" id="15G-Y3-ZQN"/>
+                        <outlet property="profileTableView" destination="RBY-zt-8N1" id="fZg-wy-SmM"/>
                         <segue destination="5dj-oc-fTe" kind="show" identifier="ProfileSegue" action="showDetailViewController:sender:" id="mK7-nI-QWo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3QI-qY-WNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2880.5" y="804.5"/>
+            <point key="canvasLocation" x="1924.5" y="880.5"/>
         </scene>
         <!--Me-->
         <scene sceneID="Cat-72-1qI">
@@ -918,7 +876,7 @@
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zBf-Gu-gGg" kind="show" identifier="AppointmentsSegue" id="MLi-AV-uLU"/>
+                                    <segue destination="v6w-Vd-Yj5" kind="show" identifier="AppointmentsSegue" id="w9E-zJ-FDs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0R0-dr-Ymw">
@@ -933,7 +891,7 @@
                                 <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="My Staff"/>
                                 <connections>
-                                    <segue destination="zBf-Gu-gGg" kind="show" identifier="MyStaffSegue" id="sNF-oa-UkB"/>
+                                    <segue destination="v6w-Vd-Yj5" kind="show" identifier="MyStaffSegue" id="jok-co-w4V"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBU-tY-Ubs">
@@ -943,7 +901,7 @@
                                     <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zBf-Gu-gGg" kind="show" identifier="RecentsSegue" id="Qds-j9-WpM"/>
+                                    <segue destination="v6w-Vd-Yj5" kind="show" identifier="RecentsSegue" id="Nfo-y5-fnv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1032,7 +990,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Uz-vC-Nan" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1336.5" y="1328.5"/>
+            <point key="canvasLocation" x="1336.5" y="1672.5"/>
         </scene>
         <!--ProfileListViewController-->
         <scene sceneID="neu-9p-F3a">
@@ -1043,18 +1001,18 @@
                         <viewControllerLayoutGuide type="bottom" id="HUV-6L-cSL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CMx-JT-VQp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mJ8-gr-MTv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mJ8-gr-MTv">
+                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="105" id="IhX-DK-BxJ" customClass="PersonTableViewCell" customModule="Momental" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="105"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="105"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IhX-DK-BxJ" id="ESM-FE-PZy">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="104.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xlZ-IT-NIl" customClass="ImageViewController" customModule="Momental" customModuleProvider="target">
@@ -1064,19 +1022,19 @@
                                                         <constraint firstAttribute="width" secondItem="xlZ-IT-NIl" secondAttribute="height" multiplier="80:80" id="ot3-c9-fDB"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDw-tz-2dy">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDw-tz-2dy">
                                                     <rect key="frame" x="95" y="13" width="272" height="32.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5i-UL-gtR">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5i-UL-gtR">
                                                     <rect key="frame" x="95" y="71" width="272" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMz-gZ-YxA">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMz-gZ-YxA">
                                                     <rect key="frame" x="95" y="45" width="272" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1138,7 +1096,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0F-ca-qVC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1806.5" y="1062.5"/>
+            <point key="canvasLocation" x="2427.5" y="1858.5"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="1xN-HG-zil">
@@ -1224,7 +1182,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZB-Mv-Cb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2428" y="805"/>
+            <point key="canvasLocation" x="847.5" y="864.5"/>
         </scene>
         <!--Me-->
         <scene sceneID="ZTC-Tf-i2Y">
@@ -1244,7 +1202,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWN-B3-aJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="803" y="1329"/>
+            <point key="canvasLocation" x="801.5" y="1672.5"/>
         </scene>
     </scenes>
     <resources>
@@ -1256,8 +1214,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="mMk-EQ-YaJ"/>
-        <segue reference="Qds-j9-WpM"/>
-        <segue reference="VmM-L7-xb0"/>
+        <segue reference="w9E-zJ-FDs"/>
+        <segue reference="mK7-nI-QWo"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

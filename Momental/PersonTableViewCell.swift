@@ -15,6 +15,7 @@ class PersonTableViewCell: UITableViewCell {
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var nextAvailableLabel: UILabel!
     
+    var type: FakeData.ProfileListType!
     var profile: Profile? {
         didSet {
             configure()
@@ -32,7 +33,16 @@ class PersonTableViewCell: UITableViewCell {
             profileImageView.configure(person.image)
             nameLabel.text = "\(person.firstName) \(person.lastName)"
             infoLabel.text  = "\(person.dorm) \(person.staffPosition)"
-            nextAvailableLabel.text = "Next available at \(Int(arc4random_uniform(10) + 1))pm"
+            switch type! {
+            case .Appointments:
+                nextAvailableLabel.text = "Appointment at \(Int(arc4random_uniform(10) + 1))pm 12/\(Int(arc4random_uniform(15) + 1))"
+            default:
+                if (Int(arc4random_uniform(10) + 1) < 2) {
+                    nextAvailableLabel.text = "Available Now!"
+                } else {
+                    nextAvailableLabel.text = "Next available at \(Int(arc4random_uniform(10) + 1))pm"
+                }
+            }
         }
     }
 
