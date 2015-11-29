@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Profile {
+class Profile: Equatable, Hashable {
     var firstName: String!
     var lastName: String!
     var dorm: FakeData.Dorms!
@@ -18,8 +18,9 @@ class Profile {
     var gender: FakeData.Gender!
     var image: String!
     var bio: String!
+    var phoneNumber: String!
     
-    init(firstName: String, lastName: String, dormName: FakeData.Dorms, roomNumber: Int, staffPosition: FakeData.StaffPosition, gender: FakeData.Gender, image: String, bio: String) {
+    init(firstName: String, lastName: String, dormName: FakeData.Dorms, roomNumber: Int, staffPosition: FakeData.StaffPosition, gender: FakeData.Gender, image: String, bio: String, phoneNumber: String) {
         self.firstName = firstName
         self.lastName = lastName
         self.dorm = dormName
@@ -28,6 +29,17 @@ class Profile {
         self.gender = gender
         self.image = image
         self.bio = bio
+        self.phoneNumber = phoneNumber
     }
+    
+    var hashValue: Int {
+        get {
+            return firstName.hashValue << 15 + lastName.hashValue
+        }
+    }
+}
+
+func ==(lhs: Profile, rhs: Profile) -> Bool {
+    return lhs.firstName == rhs.firstName && lhs.lastName == rhs.lastName
 }
 

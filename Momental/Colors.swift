@@ -13,7 +13,11 @@ public typealias Color = UIColor
 extension Color {
     
     class func personImageBorderColor() -> Color {
-        return Color.blueColor()
+        return UIColor(hex: 0x00ae97)
+    }
+    
+    class func mainColor() -> Color {
+        return UIColor(hex: 0x00ae97)
     }
     
 }
