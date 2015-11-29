@@ -957,12 +957,12 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="giR-F1-e86"/>
                                 <exclude reference="Ucc-Zq-b06"/>
                                 <exclude reference="fqi-6k-rdQ"/>
                                 <exclude reference="tSh-5a-edk"/>
                                 <exclude reference="ta2-Lw-tD9"/>
                                 <exclude reference="z4c-6K-4lJ"/>
+                                <exclude reference="giR-F1-e86"/>
                                 <exclude reference="0kl-vS-dz8"/>
                                 <exclude reference="LKC-lh-Qb0"/>
                                 <exclude reference="Xhe-jS-EPC"/>
