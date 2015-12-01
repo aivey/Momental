@@ -11,15 +11,17 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     @IBOutlet weak var profileImageView: ImageViewController!
-    @IBOutlet weak var bioLabel: UILabel!
+//    @IBOutlet weak var bioLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var positionLabel: UILabel!
     
     var profile: Profile!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        profileImageView.configure(profile.image)
         nameLabel.text = "\(profile.firstName) \(profile.lastName)"
-        bioLabel.text = profile.bio
+        positionLabel.text = "\(profile.dorm) \(profile.staffPosition)";
         
         // Do any additional setup after loading the view.
     }
@@ -30,14 +32,17 @@ class ProfileViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "Embed") {
+            if let profileTable = segue.destinationViewController as? ProfileTableViewController {
+                profileTable.profile = profile;
+            }
+        }
     }
-    */
+    
 
 }
