@@ -140,6 +140,7 @@
 				16A07ACB1BFECA0D00143BB2 /* Resources.swift */,
 				AF0530ED1BF8143700735162 /* LoginViewController.swift */,
 				AF0530EF1BF8143700735162 /* Main.storyboard */,
+				163399121BFFD0F9000D3319 /* ProfileTableViewController.swift */,
 				AF7405921C0B122200281475 /* CalendarViewController.swift */,
 				AF11C1491C09A4D700B0F915 /* MeViewController.swift */,
 				AF11C14B1C09A5CC00B0F915 /* ProfileListViewController.swift */,
