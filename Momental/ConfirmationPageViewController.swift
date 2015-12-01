@@ -25,6 +25,13 @@ class ConfirmationPageViewController: UIViewController, MFMessageComposeViewCont
         matchImageView.configure(matchProfile.image)
         viewProfileButton.layer.borderColor = Color.mainColor().CGColor
         // Do any additional setup after loading the view.
+        
+        
+        if FakeData.favorites.contains(matchProfile) {
+            starButton.setImage(UIImage(named: "Star Filled"), forState: UIControlState.Normal)
+        } else {
+            starButton.setImage(UIImage(named: "Star Icon"), forState: UIControlState.Normal)
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -12,7 +12,11 @@ class ProfileListViewController: UIViewController, UITableViewDataSource, UITabl
 
     @IBOutlet weak var profileTableView: UITableView!
     
-    var profiles: [Profile] = FakeData.myFavorites()
+    var profiles: [Profile] = FakeData.myFavorites() {
+        didSet {
+            profileTableView?.reloadData()
+        }
+    }
     var type: FakeData.ProfileListType = FakeData.ProfileListType.Favorites
     
     override func viewDidLoad() {
@@ -21,6 +25,13 @@ class ProfileListViewController: UIViewController, UITableViewDataSource, UITabl
         profileTableView.dataSource = self
         if (type == .Favorites) {
             self.title = "Favorites"
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        if (type == .Favorites) {
+            profiles = FakeData.myFavorites()
         }
     }
     
