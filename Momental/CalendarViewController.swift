@@ -10,9 +10,12 @@ import UIKit
 
 class CalendarViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    @IBOutlet weak var profileImage: ImageViewController!
-    @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
+    
+    //@IBOutlet weak var profileImage: ImageViewController!
+    
+    //@IBOutlet weak var profileImage: ImageViewController!
+    //@IBOutlet weak var dayLabel: UILabel!
+    //@IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var appointmentCollectionView: UICollectionView!
     
     var profile: Profile!
@@ -23,7 +26,7 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profileImage.configure(profile.image)
+        //profileImage.configure(profile.image)
         setDateLabels(0)
     }
 
@@ -37,15 +40,15 @@ class CalendarViewController: UIViewController, UICollectionViewDataSource, UICo
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "MM/dd"
         
-        dateLabel.text = dateFormatter.stringFromDate(newDate)
+        //dateLabel.text = dateFormatter.stringFromDate(newDate)
         
         if(interval == 0) {
-            dayLabel.text = "Today"
+            //dayLabel.text = "Today"
         } else {
             let myCalendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
             let myComponents = myCalendar.components(.Weekday, fromDate: newDate)
             let weekDay = myComponents.weekday
-            dayLabel.text = daysOfWeek[weekDay]
+            //dayLabel.text = daysOfWeek[weekDay]
         }
     }
     
