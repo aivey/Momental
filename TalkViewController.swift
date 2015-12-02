@@ -35,7 +35,7 @@ class TalkViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         genderPickerData = FakeData.genderArray //["any gender", "male", "female", "nonbinary"]
         topicPickerData = FakeData.topicsArray //["anything", "LGBT", "relationships", "academic stress", "homesickness", "first-gen"]
 
-        topicPicker.selectRow(12, inComponent:0, animated:false)
+        topicPicker.selectRow(14, inComponent:0, animated:false)
         // Do any additional setup after loading the view.
     }
 
