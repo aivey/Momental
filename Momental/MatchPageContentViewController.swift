@@ -14,6 +14,7 @@ class MatchPageContentViewController: UIViewController, UIAlertViewDelegate, MFM
 
     var matchProfile: Profile!
     var pageIndex: Int?
+    var apptPos: Int?
     
     @IBOutlet weak var matchImageView: ImageViewController!
 
@@ -69,6 +70,7 @@ class MatchPageContentViewController: UIViewController, UIAlertViewDelegate, MFM
         
         let inPersonAction = UIAlertAction(title: "In person", style: .Default, handler: {
             (alert: UIAlertAction!) -> Void in
+                self.apptPos = FakeData.addAppointment(self.matchProfile, timeString: "Now")
                 self.performSegueWithIdentifier("bookAppt", sender: nil)
         })
         let textAction = UIAlertAction(title: "Text", style: .Default, handler: {
@@ -118,6 +120,7 @@ class MatchPageContentViewController: UIViewController, UIAlertViewDelegate, MFM
         {
             if let confirmationPage = segue.destinationViewController as? ConfirmationPageViewController {
                 confirmationPage.matchProfile = matchProfile
+                confirmationPage.apptPos = apptPos
             }
         }
     }

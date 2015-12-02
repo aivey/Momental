@@ -16,6 +16,7 @@ class PersonTableViewCell: UITableViewCell {
     @IBOutlet weak var nextAvailableLabel: UILabel!
     
     var type: FakeData.ProfileListType!
+    var apptString: String?
     var profile: Profile? {
         didSet {
             configure()
@@ -35,7 +36,7 @@ class PersonTableViewCell: UITableViewCell {
             infoLabel.text  = "\(person.dorm) \(person.staffPosition)"
             switch type! {
             case .Appointments:
-                nextAvailableLabel.text = "Appointment at \(Int(arc4random_uniform(10) + 1))pm 12/\(Int(arc4random_uniform(15) + 1))"
+                nextAvailableLabel.text = "Appointment at \(apptString)"
             default:
                 if (Int(arc4random_uniform(10) + 1) < 2) {
                     nextAvailableLabel.text = "Available Now!"

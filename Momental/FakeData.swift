@@ -24,6 +24,9 @@ class FakeData {
     static let positionArray = ["Any Position", "Bridge", "CM", "FLIP", "PHE", "RA", "RCC", "RF", "SHPRC"]
     static let topicsArray = ["Anything", "Academics", "Conflict", "Depression", "Failure", "First-Gen", "Homesickness", "LGBTQ", "Race/Identity", "Relationships", "Self-Harm", "Sexual Assault", "Sexuality", "Stress"]
     
+    static var appointments = [Profile: [String]]()
+    static var appointmentsMap = [Profile]()
+    
     class func talkMatches() -> [Profile] {
        return [samProfile, jamieProfile, scottProfile, susanProfile]
     }
@@ -38,6 +41,23 @@ class FakeData {
     
     class func recents() -> [Profile] {
         return [samProfile, hannahProfile, skylarProfile, scottProfile]
+    }
+    
+    class func addAppointment(profile: Profile, timeString: String) -> Int {
+        if let _ = appointments[profile] {
+            appointments[profile]?.append(timeString)
+            return (appointments[profile]?.count)! - 1
+        } else {
+            appointments[profile] = [timeString]
+            appointmentsMap.append(profile)
+            return 0
+        }
+    }
+    
+    class func removeAppointment(profile: Profile, pos: Int) {
+        if let _ = appointments[profile] {
+            appointments[profile]!.removeAtIndex(pos)
+        }
     }
     
     enum ProfileListType {

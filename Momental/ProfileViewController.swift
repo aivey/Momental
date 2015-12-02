@@ -41,6 +41,10 @@ class ProfileViewController: UIViewController {
             if let profileTable = segue.destinationViewController as? ProfileTableViewController {
                 profileTable.profile = profile;
             }
+        } else if (segue.identifier == "CalendarSegue") {
+            if let dvc = segue.destinationViewController as? CalendarViewController {
+                dvc.profile = profile;
+            }
         }
     }
     

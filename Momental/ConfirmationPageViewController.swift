@@ -18,6 +18,7 @@ class ConfirmationPageViewController: UIViewController, MFMessageComposeViewCont
     
     
     var matchProfile: Profile!
+    var apptPos: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,10 +42,8 @@ class ConfirmationPageViewController: UIViewController, MFMessageComposeViewCont
     
 
     @IBAction func cancelAppt(sender: AnyObject) {
-        
         navigationController?.popViewControllerAnimated(true)
-        
-        //CODE TO REMOVE APPT FROM SAVED APPTS
+        FakeData.removeAppointment(matchProfile, pos: apptPos)
     }
     
     @IBAction func clickTextButton() {

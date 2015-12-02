@@ -47,13 +47,38 @@ class ProfileListViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return profiles.count
+        print(FakeData.appointments)
+        if (type == .Appointments) {
+            var count = 0
+            for(var i = 0; i < profiles.count; i++) {
+                if let appts = FakeData.appointments[profiles[i]] {
+                    count += appts.count
+                }
+            }
+            return count
+        } else {
+            return profiles.count
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("PersonCell", forIndexPath: indexPath) as! PersonTableViewCell
         cell.type = type
-        cell.profile = profiles[indexPath.row]
+        if (type != .Appointments) {
+            cell.profile = profiles[indexPath.row]
+        } else {
+            var count = indexPath.row
+            for(var i = 0; i < FakeData.appointmentsMap.count; i++) {
+                let prof = FakeData.appointmentsMap[i]
+                let numAppts = FakeData.appointments[prof]?.count
+                if(count < numAppts) {
+                    cell.profile = prof
+                    cell.apptString = FakeData.appointments[prof]?[count]
+                } else {
+                    count = count - numAppts!
+                }
+            }
+        }
         return cell
     }
     
