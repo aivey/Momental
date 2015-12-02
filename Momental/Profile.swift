@@ -36,7 +36,8 @@ class Profile: Equatable, Hashable {
     
     var hashValue: Int {
         get {
-            return firstName.hashValue << 15 + lastName.hashValue
+            return "\(firstName),\(lastName),\(phoneNumber)".hashValue
+//            return firstName.hashValue << 15 + lastName.hashValue
         }
     }
 }

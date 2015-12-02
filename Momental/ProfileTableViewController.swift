@@ -45,23 +45,49 @@ class ProfileTableViewController: UITableViewController {
             cell.detailTextLabel?.text = "Monday 7PM";
         } else if (indexPath.row == 1) {
             cell.textLabel?.text = "Bio"
-            cell.detailTextLabel?.text = "\(profile.bio)";
+//            if indexPath.row == selectedRowIndex.row {
+                cell.detailTextLabel?.text = "\(profile.bio)";
+//            } else {
+//                cell.detailTextLabel?.text = "click for more";
+//            }
         } else if (indexPath.row == 2) {
             cell.textLabel?.text = "Tags"
-            cell.detailTextLabel?.text = "\(profile.tags)";
+            cell.detailTextLabel?.text = profile.tags.joinWithSeparator(", ")
+
         }
 
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (selectedRowIndex == indexPath) {
+            selectedRowIndex = NSIndexPath(forRow: -1, inSection: 0)
+            tableView.reloadData()
+        } else {
+            selectedRowIndex = indexPath
+        }
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
+
+    
+    var selectedRowIndex: NSIndexPath = NSIndexPath(forRow: -1, inSection: 0)
+    
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if (indexPath.row == 0) {
+            return 60;
+        }
         if (indexPath.row == 1) {
-            return 180;
+//            if indexPath.row == selectedRowIndex.row {
+//                return UITableViewAutomaticDimension
+//            }
+            return 180
+
         }
         if (indexPath.row == 2) {
             return 60;
         }
-        return 44;
+        return 60;
     }
 
 
