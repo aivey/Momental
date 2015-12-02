@@ -13,19 +13,17 @@ class AppointmentCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var backView: UIView!
     @IBOutlet weak var timeLabel: UILabel!
     
-    func viewDidLoad() {
-        self.backgroundView = UIView(frame: self.bounds)
+    override func awakeFromNib() {
+        let backgroundView: UIView = UIView(frame: self.bounds)
+        backgroundView.layer.borderWidth = 1
+        backgroundView.layer.borderColor = UIColor.grayColor().CGColor
+        backgroundView.layer.cornerRadius = 10
+        self.backgroundView = backgroundView;
+
+        let selectedBGView: UIView = UIView(frame: self.bounds)
+        selectedBGView.layer.borderWidth = 1
+        selectedBGView.layer.backgroundColor = UIColor.grayColor().CGColor
+        selectedBGView.layer.cornerRadius = 10
+        self.selectedBackgroundView = selectedBGView;
     }
- 
-//    func viewDidLoad() {
-//        let backgroundView: UIView = UIView(frame: self.bounds)
-//        backgroundView.layer.borderWidth = 1
-//        backgroundView.layer.borderColor = UIColor.grayColor().CGColor
-//        self.backgroundView = backgroundView;
-//        
-//        let selectedBGView: UIView = UIView(frame: self.bounds)
-//        selectedBGView.layer.borderWidth = 1
-//        selectedBGView.layer.borderColor = UIColor.grayColor().CGColor
-//        self.selectedBackgroundView = selectedBGView;
-//    }
 }

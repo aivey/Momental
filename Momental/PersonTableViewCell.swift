@@ -25,7 +25,6 @@ class PersonTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         configure()
     }
     
@@ -36,7 +35,7 @@ class PersonTableViewCell: UITableViewCell {
             infoLabel.text  = "\(person.dorm) \(person.staffPosition)"
             switch type! {
             case .Appointments:
-                nextAvailableLabel.text = "Appointment at \(apptString)"
+                nextAvailableLabel.text = "\(apptString!)"
             default:
                 if (Int(arc4random_uniform(10) + 1) < 2) {
                     nextAvailableLabel.text = "Available Now!"

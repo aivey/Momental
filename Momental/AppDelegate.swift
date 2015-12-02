@@ -27,8 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
 
         UIApplication.sharedApplication().statusBarStyle = .LightContent
-
         
+        UIPageControl.appearance().pageIndicatorTintColor = Color.lightGrayColor()
+        UIPageControl.appearance().currentPageIndicatorTintColor = Color.mainColor()
+        UIPageControl.appearance().backgroundColor = Color.whiteColor()
         return true
     }
 

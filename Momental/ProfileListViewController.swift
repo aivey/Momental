@@ -72,8 +72,8 @@ class ProfileListViewController: UIViewController, UITableViewDataSource, UITabl
                 let prof = FakeData.appointmentsMap[i]
                 let numAppts = FakeData.appointments[prof]?.count
                 if(count < numAppts) {
-                    cell.profile = prof
                     cell.apptString = FakeData.appointments[prof]?[count]
+                    cell.profile = prof
                 } else {
                     count = count - numAppts!
                 }
