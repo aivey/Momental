@@ -18,3 +18,9 @@ extension UIColor {
         self.init(red: (hex >> 16) & 0xff, green: (hex >> 8) & 0xff, blue: hex & 0xff)
     }
 }
+
+extension CALayer {
+    func setBorderColorFromUIColor(color: UIColor) {
+        self.borderColor = color.CGColor;
+    }
+}

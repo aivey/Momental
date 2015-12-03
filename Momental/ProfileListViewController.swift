@@ -59,6 +59,7 @@ class ProfileListViewController: UIViewController, UITableViewDataSource, UITabl
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         performSegueWithIdentifier("ProfileSegue", sender: tableView.cellForRowAtIndexPath(indexPath))
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
     }
 
     
