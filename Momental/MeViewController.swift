@@ -48,7 +48,7 @@ class MeViewController: UIViewController {
         }
         
         if right {
-            let rightBorder = UIView(frame: CGRectMake(btn.frame.size.width - 1, 0, 1, btn.frame.size.height))
+            let rightBorder = UIView(frame: CGRectMake(/*btn.frame.size.width*/ 188 - 1, 0, 1, btn.frame.size.height))
             rightBorder.backgroundColor = UIColor.mainColor()
             btn.addSubview(rightBorder)
         }
