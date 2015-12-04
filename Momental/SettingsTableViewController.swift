@@ -1,20 +1,21 @@
 //
-//  ProfileTableViewController.swift
+//  SettingsTableViewController.swift
 //  Momental
 //
-//  Created by Meredith Marks on 11/20/15.
+//  Created by Adrienne Ivey on 12/4/15.
 //  Copyright © 2015 CS147 Mometal Team. All rights reserved.
 //
 
 import UIKit
 
-class ProfileTableViewController: UITableViewController {
+class SettingsTableViewController: UITableViewController {
 
-    var profile: Profile!
+    @IBOutlet weak var profileImageView: ImageViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        profileImageView.configure("sierrakcPhoto")
+        tableView.tableFooterView = UIView()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -30,72 +31,24 @@ class ProfileTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1;
+        // #warning Incomplete implementation, return the number of sections
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3;
+        // #warning Incomplete implementation, return the number of rows
+        return 2
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ProfileCell", forIndexPath: indexPath)
-
-        if (indexPath.row == 0) {
-            cell.textLabel?.text = "Next\nAvailable"
-            if profile.availableNow == true {
-                cell.detailTextLabel?.text = "Now!";
-            } else if let times = profile.availableTimesArray[0] {
-                cell.detailTextLabel?.text = "Today at \(times[0])pm";
-            } else {
-                cell.detailTextLabel?.text = "Monday 7PM";
-            }
-        } else if (indexPath.row == 1) {
-            cell.textLabel?.text = "Bio"
-//            if indexPath.row == selectedRowIndex.row {
-                cell.detailTextLabel?.text = "\(profile.bio)";
-//            } else {
-//                cell.detailTextLabel?.text = "click for more";
-//            }
-        } else if (indexPath.row == 2) {
-            cell.textLabel?.text = "Tags"
-            cell.detailTextLabel?.text = profile.tags.joinWithSeparator(", ")
-
+        var cell = UITableViewCell()
+        if indexPath.row == 0 {
+        cell = tableView.dequeueReusableCellWithIdentifier("InfoCell", forIndexPath: indexPath)
+        } else {
+            cell = tableView.dequeueReusableCellWithIdentifier("DormCell", forIndexPath: indexPath)
         }
-
         return cell
     }
-    
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if (selectedRowIndex == indexPath) {
-            selectedRowIndex = NSIndexPath(forRow: -1, inSection: 0)
-            tableView.reloadData()
-        } else {
-            selectedRowIndex = indexPath
-        }
-        tableView.beginUpdates()
-        tableView.endUpdates()
-    }
-
-    
-    var selectedRowIndex: NSIndexPath = NSIndexPath(forRow: -1, inSection: 0)
-    
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if (indexPath.row == 0) {
-            return 60;
-        }
-        if (indexPath.row == 1) {
-//            if indexPath.row == selectedRowIndex.row {
-//                return UITableViewAutomaticDimension
-//            }
-            return 180
-
-        }
-        if (indexPath.row == 2) {
-            return 60;
-        }
-        return 60;
-    }
-
 
     /*
     // Override to support conditional editing of the table view.

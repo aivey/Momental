@@ -26,6 +26,7 @@
 		AF11C1481C09A2AE00B0F915 /* MyStaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF11C1471C09A2AE00B0F915 /* MyStaffViewController.swift */; };
 		AF11C14A1C09A4D700B0F915 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF11C1491C09A4D700B0F915 /* MeViewController.swift */; };
 		AF11C14C1C09A5CC00B0F915 /* ProfileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF11C14B1C09A5CC00B0F915 /* ProfileListViewController.swift */; };
+		AF1EA45C1C119C620062EC15 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1EA45B1C119C620062EC15 /* SettingsTableViewController.swift */; };
 		AF2D922A1BFE5E5C00ED84F4 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D92291BFE5E5C00ED84F4 /* Profile.swift */; };
 		AF2D922C1BFE725E00ED84F4 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D922B1BFE725E00ED84F4 /* FakeData.swift */; };
 		AF2D922E1BFE8DDC00ED84F4 /* BioPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2D922D1BFE8DDC00ED84F4 /* BioPopoverViewController.swift */; };
@@ -82,6 +83,7 @@
 		AF11C1471C09A2AE00B0F915 /* MyStaffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStaffViewController.swift; sourceTree = "<group>"; };
 		AF11C1491C09A4D700B0F915 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		AF11C14B1C09A5CC00B0F915 /* ProfileListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileListViewController.swift; sourceTree = "<group>"; };
+		AF1EA45B1C119C620062EC15 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		AF2D92291BFE5E5C00ED84F4 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		AF2D922B1BFE725E00ED84F4 /* FakeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
 		AF2D922D1BFE8DDC00ED84F4 /* BioPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioPopoverViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		AF0530EA1BF8143700735162 /* Momental */ = {
 			isa = PBXGroup;
 			children = (
+				AF1EA45B1C119C620062EC15 /* SettingsTableViewController.swift */,
 				16A07ACF1BFECFD100143BB2 /* TalkViewController.swift */,
 				AF0530EB1BF8143700735162 /* AppDelegate.swift */,
 				16A07ACB1BFECA0D00143BB2 /* Resources.swift */,
@@ -262,7 +265,7 @@
 				TargetAttributes = {
 					AF0530E71BF8143700735162 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = 3XAET6U86W;
+						DevelopmentTeam = R72A52J2K5;
 					};
 					AF0530FB1BF8143700735162 = {
 						CreatedOnToolsVersion = 7.1;
@@ -340,6 +343,7 @@
 				AFE5E3FF1C0EE80100FE165D /* CalendarHeaderCollectionReusableView.swift in Sources */,
 				AFE5E3FD1C0E3DE500FE165D /* AppointmentCollectionViewCell.swift in Sources */,
 				AF05311A1BF977FC00735162 /* MatchPageContentViewController.swift in Sources */,
+				AF1EA45C1C119C620062EC15 /* SettingsTableViewController.swift in Sources */,
 				AF2D922E1BFE8DDC00ED84F4 /* BioPopoverViewController.swift in Sources */,
 				169D61E71C0FC7FA00E0BDD4 /* SearchViewController.swift in Sources */,
 				AF11C14C1C09A5CC00B0F915 /* ProfileListViewController.swift in Sources */,
@@ -495,8 +499,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Momental/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs147.mental-health";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs147.mentalhealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -509,8 +514,9 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Momental/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.stanford.cs147.mental-health";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs147.mentalhealth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

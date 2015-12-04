@@ -37,7 +37,7 @@ class PersonTableViewCell: UITableViewCell {
             case .Appointments:
                 nextAvailableLabel.text = "\(apptString!)"
             default:
-                if (Int(arc4random_uniform(10) + 1) < 2) {
+                if (profile?.availableNow == true) {
                     nextAvailableLabel.text = "Available Now!"
                 } else {
                     if let time = profile?.availableTimesArray[0]![0] {

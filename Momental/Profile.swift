@@ -21,6 +21,7 @@ class Profile: Equatable, Hashable {
     var phoneNumber: String!
     var tags: [String]!
     var availableTimesArray: [Int: [String]]!
+    var availableNow: Bool
     
     init(firstName: String, lastName: String, dormName: FakeData.Dorms, roomNumber: Int, staffPosition: FakeData.StaffPosition, gender: FakeData.Gender, image: String, bio: String, phoneNumber: String, tags: [String]) {
         self.firstName = firstName
@@ -33,6 +34,7 @@ class Profile: Equatable, Hashable {
         self.bio = bio
         self.phoneNumber = phoneNumber
         self.tags = tags;
+        self.availableNow = Int(arc4random_uniform(5)) == 1
         self.availableTimesArray = [Int: [String]]()
         setUpAvailableTimesArray()
     }
