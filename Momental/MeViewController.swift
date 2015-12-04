@@ -27,7 +27,7 @@ class MeViewController: UIViewController {
     
     func setUpButtons(bottom: Bool, top: Bool, left: Bool, right: Bool, btn: UIButton) {
         btn.titleLabel?.adjustsFontSizeToFitWidth = true
-        btn.titleLabel?.minimumScaleFactor = 2
+        btn.titleLabel?.minimumScaleFactor = 0.6
         
         if bottom {
             let bottomBorder = UIView(frame: CGRectMake(0, btn.frame.size.height, btn.frame.size.width, 1))
@@ -53,7 +53,7 @@ class MeViewController: UIViewController {
             btn.addSubview(rightBorder)
         }
         
-        
+        //btn.centerLabelVerticallyWithPadding(6)
     }
 
     override func didReceiveMemoryWarning() {
@@ -94,3 +94,30 @@ class MeViewController: UIViewController {
         }
     }
 }
+
+extension UIButton {
+    func centerLabelVerticallyWithPadding(spacing:CGFloat) {
+        // update positioning of image and title
+        let imageSize = self.imageView!.frame.size
+        self.titleEdgeInsets = UIEdgeInsets(top:0,
+            left:-imageSize.width,
+            bottom:-(imageSize.height + spacing),
+            right:0)
+        let titleSize = self.titleLabel!.frame.size
+        self.imageEdgeInsets = UIEdgeInsets(top:-(titleSize.height + spacing),
+            left:0,
+            bottom: 0,
+            right:-titleSize.width)
+        
+        // reset contentInset, so intrinsicContentSize() is still accurate
+        let trueContentSize = CGRectUnion(self.titleLabel!.frame, self.imageView!.frame).size
+        let oldContentSize = self.intrinsicContentSize()
+        let heightDelta = trueContentSize.height - oldContentSize.height
+        let widthDelta = trueContentSize.width - oldContentSize.width
+        self.contentEdgeInsets = UIEdgeInsets(top:heightDelta/2.0,
+            left:widthDelta/2.0,
+            bottom:heightDelta/2.0,
+            right:widthDelta/2.0)
+    }
+}
+
