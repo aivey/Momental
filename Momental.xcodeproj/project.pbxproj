@@ -148,6 +148,7 @@
 				16A07ACB1BFECA0D00143BB2 /* Resources.swift */,
 				AF0530ED1BF8143700735162 /* LoginViewController.swift */,
 				AF0530EF1BF8143700735162 /* Main.storyboard */,
+				169D61E61C0FC7FA00E0BDD4 /* SearchViewController.swift */,
 				AFE5E4001C0FA1CA00FE165D /* MeOptionButton.swift */,
 				AFE5E3FC1C0E3DE500FE165D /* AppointmentCollectionViewCell.swift */,
 				AFE5E3FE1C0EE80100FE165D /* CalendarHeaderCollectionReusableView.swift */,
