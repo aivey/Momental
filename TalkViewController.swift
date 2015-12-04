@@ -59,7 +59,7 @@ class TalkViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             return genderPickerData.count
         }
         if pickerView == topicPicker {
-            return topicPickerData.count
+            return 27
         }
         return 1
     }
@@ -73,7 +73,7 @@ class TalkViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             return genderPickerData[row]
         }
         if pickerView == topicPicker {
-            return topicPickerData[row]
+            return topicPickerData[row % topicPickerData.count]
         }
         return "fuck"
     }
