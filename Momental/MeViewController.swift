@@ -52,8 +52,6 @@ class MeViewController: UIViewController {
             rightBorder.backgroundColor = UIColor.mainColor()
             btn.addSubview(rightBorder)
         }
-        
-        //btn.centerLabelVerticallyWithPadding(6)
     }
 
     override func didReceiveMemoryWarning() {
