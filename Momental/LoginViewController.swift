@@ -33,7 +33,7 @@ class LoginViewController: UIViewController {
 
 
     @IBAction func login(sender: AnyObject) {
-        print("Login automatically")
+        //print("Login automatically")
     }
     
 }

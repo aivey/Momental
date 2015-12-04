@@ -47,7 +47,6 @@ class ProfileListViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(FakeData.appointments)
         if (type == .Appointments) {
             var count = 0
             for(var i = 0; i < profiles.count; i++) {
