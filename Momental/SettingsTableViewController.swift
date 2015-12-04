@@ -9,13 +9,12 @@
 import UIKit
 
 class SettingsTableViewController: UITableViewController {
-
-    @IBOutlet weak var profileImageView: ImageViewController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profileImageView.configure("sierrakcPhoto")
         tableView.tableFooterView = UIView()
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 230.0
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -37,15 +36,23 @@ class SettingsTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 6
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = UITableViewCell()
         if indexPath.row == 0 {
         cell = tableView.dequeueReusableCellWithIdentifier("InfoCell", forIndexPath: indexPath)
-        } else {
+        } else if indexPath.row == 1 {
+            cell = tableView.dequeueReusableCellWithIdentifier("EmailCell", forIndexPath: indexPath)
+        } else if indexPath.row == 2 {
+            cell = tableView.dequeueReusableCellWithIdentifier("PasswordCell", forIndexPath: indexPath)
+        } else if indexPath.row == 3 {
             cell = tableView.dequeueReusableCellWithIdentifier("DormCell", forIndexPath: indexPath)
+        } else if indexPath.row == 4 {
+            cell = tableView.dequeueReusableCellWithIdentifier("GenderCell", forIndexPath: indexPath)
+        } else if indexPath.row == 5 {
+            cell = tableView.dequeueReusableCellWithIdentifier("LocationCell", forIndexPath: indexPath)
         }
         return cell
     }
