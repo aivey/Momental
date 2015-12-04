@@ -59,7 +59,7 @@ class TalkViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
             return genderPickerData.count
         }
         if pickerView == topicPicker {
-            return 6000
+            return 27
         }
         return 1
     }

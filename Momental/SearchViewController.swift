@@ -14,8 +14,11 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var filtersScrollView: UIScrollView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var selectedFilters = [String]()
+    @IBOutlet weak var locationScrollView: UIScrollView!
+    @IBOutlet weak var roleScrollView: UIScrollView!
+    @IBOutlet weak var topicScrollView: UIScrollView!
     
+    var selectedFilters = [String]()
     var labelSize = CGSize()
     
     override func viewDidLoad() {
@@ -55,7 +58,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
 //                    filtersLabel.text? = "type to search, tap tags to filter"
 //                    filtersLabel.frame.size = labelSize
 //                } else {
-//                    filtersLabel.text? = selectedFilters.joinWithSeparator(", ")
+//                    filtersLabel.text? = "Filters: \(selectedFilters.joinWithSeparator(", "))"
 //                    filtersLabel.sizeToFit()
 //                    filtersScrollView.contentSize = CGSize(width: filtersLabel.frame.size.width + 16, height: filtersLabel.frame.size.height)
 //                    if filtersLabel.frame.size.width + 48 > view.frame.size.width {
@@ -90,5 +93,32 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
 
     }
     
+    @IBAction func reset() {
+        searchBar.text = "";
+        for curr in locationScrollView.subviews {
+            if let label = curr as? UILabel {
+                label.backgroundColor = UIColor.whiteColor()
+                label.layer.borderColor = UIColor.lightGrayColor().CGColor
+                label.textColor = Color.mainColor()
+            }
+        }
+        
+        for curr in roleScrollView.subviews {
+            if let label = curr as? UILabel {
+                label.backgroundColor = UIColor.whiteColor()
+                label.layer.borderColor = UIColor.lightGrayColor().CGColor
+                label.textColor = Color.mainColor()
+            }
+        }
+        
+        for curr in topicScrollView.subviews {
+            if let label = curr as? UILabel {
+                label.backgroundColor = UIColor.whiteColor()
+                label.layer.borderColor = UIColor.lightGrayColor().CGColor
+                label.textColor = Color.mainColor()
+            }
+        }
+        
+    }
 
 }
