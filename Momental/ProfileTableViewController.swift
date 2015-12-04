@@ -42,7 +42,11 @@ class ProfileTableViewController: UITableViewController {
 
         if (indexPath.row == 0) {
             cell.textLabel?.text = "Next\nAvailable"
-            cell.detailTextLabel?.text = "Monday 7PM";
+            if let times = profile.availableTimesArray[0] {
+                cell.detailTextLabel?.text = "Today at \(times[0])pm";
+            } else {
+                cell.detailTextLabel?.text = "Monday 7PM";
+            }
         } else if (indexPath.row == 1) {
             cell.textLabel?.text = "Bio"
 //            if indexPath.row == selectedRowIndex.row {

@@ -40,7 +40,9 @@ class PersonTableViewCell: UITableViewCell {
                 if (Int(arc4random_uniform(10) + 1) < 2) {
                     nextAvailableLabel.text = "Available Now!"
                 } else {
-                    nextAvailableLabel.text = "Next available at \(Int(arc4random_uniform(10) + 1))pm"
+                    if let time = profile?.availableTimesArray[0]![0] {
+                        nextAvailableLabel.text = "Next available at \(time)pm"
+                    }
                 }
             }
         }

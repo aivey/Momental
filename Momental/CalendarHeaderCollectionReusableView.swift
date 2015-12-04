@@ -20,15 +20,15 @@ class CalendarHeaderCollectionReusableView: UICollectionReusableView {
         didSet {
             if calInterval == 0 {
                 prevButton.enabled = false
-                prevButton.titleLabel?.textColor = Color.mainColor()
+                //prevButton.titleLabel?.textColor = Color.mainColor()
             } else if calInterval == maxInterval - 1 {
                 nextButton.enabled = false
-                nextButton.titleLabel?.textColor = Color.mainColor()
+                //nextButton.titleLabel?.textColor = Color.mainColor()
             } else {
                 nextButton.enabled = true
                 prevButton.enabled = true
-                nextButton.titleLabel?.textColor = Color.mainColor()
-                prevButton.titleLabel?.textColor = Color.mainColor()
+                //nextButton.titleLabel?.textColor = Color.mainColor()
+                //prevButton.titleLabel?.textColor = Color.mainColor()
             }
         }
     }
