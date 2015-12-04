@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1630DEBC1BFF2069002D7D38 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1630DEBB1BFF2069002D7D38 /* TabBarViewController.swift */; };
 		163399131BFFD0F9000D3319 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163399121BFFD0F9000D3319 /* ProfileTableViewController.swift */; };
+		169D61E71C0FC7FA00E0BDD4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169D61E61C0FC7FA00E0BDD4 /* SearchViewController.swift */; };
 		16A07ACC1BFECA0D00143BB2 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A07ACB1BFECA0D00143BB2 /* Resources.swift */; };
 		16A07AD01BFECFD100143BB2 /* TalkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A07ACF1BFECFD100143BB2 /* TalkViewController.swift */; };
 		AF0530EC1BF8143700735162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0530EB1BF8143700735162 /* AppDelegate.swift */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		1630DEBB1BFF2069002D7D38 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		163399121BFFD0F9000D3319 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		169D61E61C0FC7FA00E0BDD4 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		16A07ACB1BFECA0D00143BB2 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		16A07ACF1BFECFD100143BB2 /* TalkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TalkViewController.swift; path = ../TalkViewController.swift; sourceTree = "<group>"; };
 		AF0530E81BF8143700735162 /* Momental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Momental.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -338,6 +340,7 @@
 				AFE5E3FD1C0E3DE500FE165D /* AppointmentCollectionViewCell.swift in Sources */,
 				AF05311A1BF977FC00735162 /* MatchPageContentViewController.swift in Sources */,
 				AF2D922E1BFE8DDC00ED84F4 /* BioPopoverViewController.swift in Sources */,
+				169D61E71C0FC7FA00E0BDD4 /* SearchViewController.swift in Sources */,
 				AF11C14C1C09A5CC00B0F915 /* ProfileListViewController.swift in Sources */,
 				AF0530EC1BF8143700735162 /* AppDelegate.swift in Sources */,
 				AF11C1461C09735800B0F915 /* FavoritesViewController.swift in Sources */,
