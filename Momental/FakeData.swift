@@ -55,6 +55,11 @@ class FakeData {
         }
     }
     
+    class func clearAppointments() {
+        appointments.removeAll()
+        appointmentsMap.removeAll()
+    }
+    
     class func removeAppointment(profile: Profile, pos: Int) {
         if let _ = appointments[profile] {
             appointments[profile]!.removeAtIndex(pos)

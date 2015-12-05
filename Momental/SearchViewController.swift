@@ -96,6 +96,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate {
     @IBAction func reset() {
         searchBar.text = "";
         selectedFilters.removeAll()
+        FakeData.clearAppointments()
         for curr in locationScrollView.subviews {
             if let label = curr as? UILabel {
                 label.backgroundColor = UIColor.whiteColor()

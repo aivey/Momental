@@ -99,9 +99,24 @@ class ProfileListViewController: UIViewController, UITableViewDataSource, UITabl
             case "ProfileSegue":
                 if let dvc = segue.destinationViewController as? ProfileViewController {
                     let cell = sender as? PersonTableViewCell
-                    if let indexPath = profileTableView.indexPathForCell(cell!) {
-                        dvc.profile = profiles[indexPath.row]
-                    }
+                    dvc.profile = cell?.profile
+//                    if let indexPath = profileTableView.indexPathForCell(cell!) {
+//                        if (type != .Appointments) {
+//                            dvc.profile = profiles[indexPath.row]
+//                        } else {
+//                            var count = indexPath.row
+//                            for(var i = 0; i < FakeData.appointmentsMap.count; i++) {
+//                                let prof = FakeData.appointmentsMap[i]
+//                                let numAppts = FakeData.appointments[prof]?.count
+//                                if(count < numAppts) {
+//                                    dvc.profile = prof
+//                                    break
+//                                } else {
+//                                    count = count - numAppts!
+//                                }
+//                            }
+//                        }
+//                    }
                 }
             default:
                 return
